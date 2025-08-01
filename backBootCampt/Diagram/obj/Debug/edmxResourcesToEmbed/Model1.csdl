@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="Model1" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+  <EntityContainer Name="Model1Container" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="gamesSet" EntityType="Model1.games" />
+    <EntitySet Name="cardSet" EntityType="Model1.card" />
+    <EntitySet Name="playersSet" EntityType="Model1.players" />
+    <EntitySet Name="malletSet" EntityType="Model1.mallet" />
+    <AssociationSet Name="playersgames" Association="Model1.playersgames">
+      <End Role="players" EntitySet="playersSet" />
+      <End Role="games" EntitySet="gamesSet" />
+    </AssociationSet>
+    <AssociationSet Name="malletcard" Association="Model1.malletcard">
+      <End Role="mallet" EntitySet="malletSet" />
+      <End Role="card" EntitySet="cardSet" />
+    </AssociationSet>
+    <AssociationSet Name="gamescard" Association="Model1.gamescard">
+      <End Role="games" EntitySet="gamesSet" />
+      <End Role="card" EntitySet="cardSet" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="games">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="winner" Type="String" Nullable="false" />
+    <NavigationProperty Name="players" Relationship="Model1.playersgames" FromRole="games" ToRole="players" />
+    <Property Name="playersId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="card" Relationship="Model1.gamescard" FromRole="games" ToRole="card" />
+    <Property Name="isDeleted" Type="String" Nullable="false" />
+    <Property Name="startTime" Type="String" Nullable="false" />
+    <Property Name="endTime" Type="String" Nullable="false" />
+    <Property Name="date" Type="String" Nullable="false" />
+  </EntityType>
+  <EntityType Name="card">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="cardName" Type="String" Nullable="false" />
+    <Property Name="CylinderCapacity" Type="String" Nullable="false" />
+    <Property Name="hP" Type="String" Nullable="false" />
+    <Property Name="finalSpeed" Type="String" Nullable="false" />
+    <Property Name="nOclylinder" Type="String" Nullable="false" />
+    <Property Name="status" Type="String" Nullable="false" />
+    <NavigationProperty Name="mallet" Relationship="Model1.malletcard" FromRole="card" ToRole="mallet" />
+    <Property Name="malletId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="games" Relationship="Model1.gamescard" FromRole="card" ToRole="games" />
+    <Property Name="gamesId" Type="Int32" Nullable="false" />
+    <Property Name="isDeleted" Type="String" Nullable="false" />
+  </EntityType>
+  <EntityType Name="players">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="userName" Type="String" Nullable="false" />
+    <NavigationProperty Name="games" Relationship="Model1.playersgames" FromRole="players" ToRole="games" />
+    <Property Name="GamesPlayed" Nullable="false" Type="String" />
+    <Property Name="isDeleted" Type="String" Nullable="false" />
+  </EntityType>
+  <EntityType Name="mallet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <NavigationProperty Name="card" Relationship="Model1.malletcard" FromRole="mallet" ToRole="card" />
+    <Property Name="typesDecks" Type="String" Nullable="false" />
+    <Property Name="isDeleted" Type="String" Nullable="false" />
+  </EntityType>
+  <Association Name="playersgames">
+    <End Type="Model1.players" Role="players" Multiplicity="1" />
+    <End Type="Model1.games" Role="games" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="players">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="games">
+        <PropertyRef Name="playersId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="malletcard">
+    <End Type="Model1.mallet" Role="mallet" Multiplicity="1" />
+    <End Type="Model1.card" Role="card" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="mallet">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="card">
+        <PropertyRef Name="malletId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="gamescard">
+    <End Type="Model1.games" Role="games" Multiplicity="1" />
+    <End Type="Model1.card" Role="card" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="games">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="card">
+        <PropertyRef Name="gamesId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

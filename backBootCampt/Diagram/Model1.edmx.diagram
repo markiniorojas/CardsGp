@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="780e74ce683a46419209de9c499be385" Name="Diagram1" ZoomLevel="83" >
+        <EntityTypeShape EntityType="Model1.Rol" Width="1.5" PointX="4.125" PointY="1.25" />
+        <EntityTypeShape EntityType="Model1.games" Width="1.5" PointX="5.125" PointY="0.875" />
+        <EntityTypeShape EntityType="Model1.card" Width="1.5" PointX="7.25" PointY="3.375" />
+        <EntityTypeShape EntityType="Model1.players" Width="1.5" PointX="2.375" PointY="1.375" />
+        <EntityTypeShape EntityType="Model1.mallet" Width="1.5" PointX="8" PointY="1" />
+        <AssociationConnector Association="Model1.playersgames" />
+        <AssociationConnector Association="Model1.malletcard" />
+        <AssociationConnector Association="Model1.gamescard" />
+        </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

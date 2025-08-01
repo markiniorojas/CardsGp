@@ -1,0 +1,427 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Aprendiz\\source\\repos\\diagrama\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BB6105EA-4D91-4F11-B7E4-882ED47C60ED}|Web\\Web.csproj|c:\\users\\aprendiz\\source\\repos\\diagrama\\web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB6105EA-4D91-4F11-B7E4-882ED47C60ED}|Web\\Web.csproj|solutionrelative:web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE311675-BED3-4BDF-9FDE-0BA909B2BF7A}|Entity\\Entity.csproj|c:\\users\\aprendiz\\source\\repos\\diagrama\\entity\\dbcontext\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE311675-BED3-4BDF-9FDE-0BA909B2BF7A}|Entity\\Entity.csproj|solutionrelative:entity\\dbcontext\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE311675-BED3-4BDF-9FDE-0BA909B2BF7A}|Entity\\Entity.csproj|c:\\users\\aprendiz\\source\\repos\\diagrama\\entity\\dto\\playerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE311675-BED3-4BDF-9FDE-0BA909B2BF7A}|Entity\\Entity.csproj|solutionrelative:entity\\dto\\playerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE311675-BED3-4BDF-9FDE-0BA909B2BF7A}|Entity\\Entity.csproj|c:\\users\\aprendiz\\source\\repos\\diagrama\\entity\\dto\\malletdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE311675-BED3-4BDF-9FDE-0BA909B2BF7A}|Entity\\Entity.csproj|solutionrelative:entity\\dto\\malletdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE311675-BED3-4BDF-9FDE-0BA909B2BF7A}|Entity\\Entity.csproj|c:\\users\\aprendiz\\source\\repos\\diagrama\\entity\\dto\\gamesdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE311675-BED3-4BDF-9FDE-0BA909B2BF7A}|Entity\\Entity.csproj|solutionrelative:entity\\dto\\gamesdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE311675-BED3-4BDF-9FDE-0BA909B2BF7A}|Entity\\Entity.csproj|c:\\users\\aprendiz\\source\\repos\\diagrama\\entity\\dto\\carddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE311675-BED3-4BDF-9FDE-0BA909B2BF7A}|Entity\\Entity.csproj|solutionrelative:entity\\dto\\carddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE311675-BED3-4BDF-9FDE-0BA909B2BF7A}|Entity\\Entity.csproj|c:\\users\\aprendiz\\source\\repos\\diagrama\\entity\\base\\basedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE311675-BED3-4BDF-9FDE-0BA909B2BF7A}|Entity\\Entity.csproj|solutionrelative:entity\\base\\basedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE311675-BED3-4BDF-9FDE-0BA909B2BF7A}|Entity\\Entity.csproj|c:\\users\\aprendiz\\source\\repos\\diagrama\\entity\\base\\basemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE311675-BED3-4BDF-9FDE-0BA909B2BF7A}|Entity\\Entity.csproj|solutionrelative:entity\\base\\basemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE311675-BED3-4BDF-9FDE-0BA909B2BF7A}|Entity\\Entity.csproj|c:\\users\\aprendiz\\source\\repos\\diagrama\\entity\\model\\card.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE311675-BED3-4BDF-9FDE-0BA909B2BF7A}|Entity\\Entity.csproj|solutionrelative:entity\\model\\card.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE311675-BED3-4BDF-9FDE-0BA909B2BF7A}|Entity\\Entity.csproj|c:\\users\\aprendiz\\source\\repos\\diagrama\\entity\\model\\mallet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE311675-BED3-4BDF-9FDE-0BA909B2BF7A}|Entity\\Entity.csproj|solutionrelative:entity\\model\\mallet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE311675-BED3-4BDF-9FDE-0BA909B2BF7A}|Entity\\Entity.csproj|c:\\users\\aprendiz\\source\\repos\\diagrama\\entity\\model\\games.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE311675-BED3-4BDF-9FDE-0BA909B2BF7A}|Entity\\Entity.csproj|solutionrelative:entity\\model\\games.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{236EB785-4ACF-4E5A-8FB7-2798DB5BAA84}|Diagram\\Diagram.csproj|c:\\users\\aprendiz\\source\\repos\\diagrama\\diagram\\model1.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
+      "RelativeMoniker": "D:0:0:{236EB785-4ACF-4E5A-8FB7-2798DB5BAA84}|Diagram\\Diagram.csproj|solutionrelative:diagram\\model1.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE311675-BED3-4BDF-9FDE-0BA909B2BF7A}|Entity\\Entity.csproj|c:\\users\\aprendiz\\source\\repos\\diagrama\\entity\\model\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE311675-BED3-4BDF-9FDE-0BA909B2BF7A}|Entity\\Entity.csproj|solutionrelative:entity\\model\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{434D694F-A64F-4425-BCEA-C9987AC345E4}|Data\\Data.csproj|c:\\users\\aprendiz\\source\\repos\\diagrama\\data\\data.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{434D694F-A64F-4425-BCEA-C9987AC345E4}|Data\\Data.csproj|solutionrelative:data\\data.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE311675-BED3-4BDF-9FDE-0BA909B2BF7A}|Entity\\Entity.csproj|c:\\users\\aprendiz\\source\\repos\\diagrama\\entity\\datainit\\datainitplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE311675-BED3-4BDF-9FDE-0BA909B2BF7A}|Entity\\Entity.csproj|solutionrelative:entity\\datainit\\datainitplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F902E35-AE92-4CA4-86F6-3B60470A9FA1}|Businnes\\Business.csproj|c:\\users\\aprendiz\\source\\repos\\diagrama\\businnes\\implemets\\basemodelbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F902E35-AE92-4CA4-86F6-3B60470A9FA1}|Businnes\\Business.csproj|solutionrelative:businnes\\implemets\\basemodelbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F902E35-AE92-4CA4-86F6-3B60470A9FA1}|Businnes\\Business.csproj|c:\\users\\aprendiz\\source\\repos\\diagrama\\businnes\\interface\\abasemodelbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F902E35-AE92-4CA4-86F6-3B60470A9FA1}|Businnes\\Business.csproj|solutionrelative:businnes\\interface\\abasemodelbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{434D694F-A64F-4425-BCEA-C9987AC345E4}|Data\\Data.csproj|c:\\users\\aprendiz\\source\\repos\\diagrama\\data\\implemets\\basemodeldata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{434D694F-A64F-4425-BCEA-C9987AC345E4}|Data\\Data.csproj|solutionrelative:data\\implemets\\basemodeldata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{434D694F-A64F-4425-BCEA-C9987AC345E4}|Data\\Data.csproj|c:\\users\\aprendiz\\source\\repos\\diagrama\\data\\interface\\abasemodeldata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{434D694F-A64F-4425-BCEA-C9987AC345E4}|Data\\Data.csproj|solutionrelative:data\\interface\\abasemodeldata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{434D694F-A64F-4425-BCEA-C9987AC345E4}|Data\\Data.csproj|c:\\users\\aprendiz\\source\\repos\\diagrama\\data\\interface\\ibasemodeldata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{434D694F-A64F-4425-BCEA-C9987AC345E4}|Data\\Data.csproj|solutionrelative:data\\interface\\ibasemodeldata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F902E35-AE92-4CA4-86F6-3B60470A9FA1}|Businnes\\Business.csproj|c:\\users\\aprendiz\\source\\repos\\diagrama\\businnes\\interface\\ibasemodelbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F902E35-AE92-4CA4-86F6-3B60470A9FA1}|Businnes\\Business.csproj|solutionrelative:businnes\\interface\\ibasemodelbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{236EB785-4ACF-4E5A-8FB7-2798DB5BAA84}|Diagram\\Diagram.csproj|C:\\Users\\Aprendiz\\source\\repos\\diagrama\\diagram\\model1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{236EB785-4ACF-4E5A-8FB7-2798DB5BAA84}|Diagram\\Diagram.csproj|solutionrelative:diagram\\model1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{236EB785-4ACF-4E5A-8FB7-2798DB5BAA84}|Diagram\\Diagram.csproj|C:\\Users\\Aprendiz\\source\\repos\\diagrama\\diagram\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{236EB785-4ACF-4E5A-8FB7-2798DB5BAA84}|Diagram\\Diagram.csproj|solutionrelative:diagram\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB6105EA-4D91-4F11-B7E4-882ED47C60ED}|Web\\Web.csproj|c:\\users\\aprendiz\\source\\repos\\diagrama\\web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{BB6105EA-4D91-4F11-B7E4-882ED47C60ED}|Web\\Web.csproj|solutionrelative:web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 12,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "BaseDto.cs",
+              "DocumentMoniker": "C:\\Users\\Aprendiz\\source\\repos\\diagrama\\Entity\\Base\\BaseDto.cs",
+              "RelativeDocumentMoniker": "Entity\\Base\\BaseDto.cs",
+              "ToolTip": "C:\\Users\\Aprendiz\\source\\repos\\diagrama\\Entity\\Base\\BaseDto.cs",
+              "RelativeToolTip": "Entity\\Base\\BaseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T20:53:38.096Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PlayerDto.cs",
+              "DocumentMoniker": "C:\\Users\\Aprendiz\\source\\repos\\diagrama\\Entity\\Dto\\PlayerDto.cs",
+              "RelativeDocumentMoniker": "Entity\\Dto\\PlayerDto.cs",
+              "ToolTip": "C:\\Users\\Aprendiz\\source\\repos\\diagrama\\Entity\\Dto\\PlayerDto.cs",
+              "RelativeToolTip": "Entity\\Dto\\PlayerDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T20:53:06.434Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MalletDto.cs",
+              "DocumentMoniker": "C:\\Users\\Aprendiz\\source\\repos\\diagrama\\Entity\\Dto\\MalletDto.cs",
+              "RelativeDocumentMoniker": "Entity\\Dto\\MalletDto.cs",
+              "ToolTip": "C:\\Users\\Aprendiz\\source\\repos\\diagrama\\Entity\\Dto\\MalletDto.cs",
+              "RelativeToolTip": "Entity\\Dto\\MalletDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T20:53:00.137Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GamesDto.cs",
+              "DocumentMoniker": "C:\\Users\\Aprendiz\\source\\repos\\diagrama\\Entity\\Dto\\GamesDto.cs",
+              "RelativeDocumentMoniker": "Entity\\Dto\\GamesDto.cs",
+              "ToolTip": "C:\\Users\\Aprendiz\\source\\repos\\diagrama\\Entity\\Dto\\GamesDto.cs",
+              "RelativeToolTip": "Entity\\Dto\\GamesDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T20:52:49.688Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CardDto.cs",
+              "DocumentMoniker": "C:\\Users\\Aprendiz\\source\\repos\\diagrama\\Entity\\Dto\\CardDto.cs",
+              "RelativeDocumentMoniker": "Entity\\Dto\\CardDto.cs",
+              "ToolTip": "C:\\Users\\Aprendiz\\source\\repos\\diagrama\\Entity\\Dto\\CardDto.cs",
+              "RelativeToolTip": "Entity\\Dto\\CardDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T20:52:48.538Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Card.cs",
+              "DocumentMoniker": "C:\\Users\\Aprendiz\\source\\repos\\diagrama\\Entity\\Model\\Card.cs",
+              "RelativeDocumentMoniker": "Entity\\Model\\Card.cs",
+              "ToolTip": "C:\\Users\\Aprendiz\\source\\repos\\diagrama\\Entity\\Model\\Card.cs",
+              "RelativeToolTip": "Entity\\Model\\Card.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T20:42:28.253Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Aprendiz\\source\\repos\\diagrama\\Entity\\dbContext\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Entity\\dbContext\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\Aprendiz\\source\\repos\\diagrama\\Entity\\dbContext\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Entity\\dbContext\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T14:38:28.677Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Mallet.cs",
+              "DocumentMoniker": "C:\\Users\\Aprendiz\\source\\repos\\diagrama\\Entity\\Model\\Mallet.cs",
+              "RelativeDocumentMoniker": "Entity\\Model\\Mallet.cs",
+              "ToolTip": "C:\\Users\\Aprendiz\\source\\repos\\diagrama\\Entity\\Model\\Mallet.cs",
+              "RelativeToolTip": "Entity\\Model\\Mallet.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T20:45:19.122Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Games.cs",
+              "DocumentMoniker": "C:\\Users\\Aprendiz\\source\\repos\\diagrama\\Entity\\Model\\Games.cs",
+              "RelativeDocumentMoniker": "Entity\\Model\\Games.cs",
+              "ToolTip": "C:\\Users\\Aprendiz\\source\\repos\\diagrama\\Entity\\Model\\Games.cs",
+              "RelativeToolTip": "Entity\\Model\\Games.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T20:39:37.275Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "BaseModel.cs",
+              "DocumentMoniker": "C:\\Users\\Aprendiz\\source\\repos\\diagrama\\Entity\\Base\\BaseModel.cs",
+              "RelativeDocumentMoniker": "Entity\\Base\\BaseModel.cs",
+              "ToolTip": "C:\\Users\\Aprendiz\\source\\repos\\diagrama\\Entity\\Base\\BaseModel.cs",
+              "RelativeToolTip": "Entity\\Base\\BaseModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T15:37:39.584Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Player.cs",
+              "DocumentMoniker": "C:\\Users\\Aprendiz\\source\\repos\\diagrama\\Entity\\Model\\Player.cs",
+              "RelativeDocumentMoniker": "Entity\\Model\\Player.cs",
+              "ToolTip": "C:\\Users\\Aprendiz\\source\\repos\\diagrama\\Entity\\Model\\Player.cs",
+              "RelativeToolTip": "Entity\\Model\\Player.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T20:33:31.799Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "BaseModelBusiness.cs",
+              "DocumentMoniker": "C:\\Users\\Aprendiz\\source\\repos\\diagrama\\Businnes\\Implemets\\BaseModelBusiness.cs",
+              "RelativeDocumentMoniker": "Businnes\\Implemets\\BaseModelBusiness.cs",
+              "ToolTip": "C:\\Users\\Aprendiz\\source\\repos\\diagrama\\Businnes\\Implemets\\BaseModelBusiness.cs",
+              "RelativeToolTip": "Businnes\\Implemets\\BaseModelBusiness.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T15:30:23.68Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Aprendiz\\source\\repos\\diagrama\\Web\\Program.cs",
+              "RelativeDocumentMoniker": "Web\\Program.cs",
+              "ToolTip": "C:\\Users\\Aprendiz\\source\\repos\\diagrama\\Web\\Program.cs",
+              "RelativeToolTip": "Web\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T15:00:43.618Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "DataInitPlayer.cs",
+              "DocumentMoniker": "C:\\Users\\Aprendiz\\source\\repos\\diagrama\\Entity\\DataInit\\DataInitPlayer.cs",
+              "RelativeDocumentMoniker": "Entity\\DataInit\\DataInitPlayer.cs",
+              "ToolTip": "C:\\Users\\Aprendiz\\source\\repos\\diagrama\\Entity\\DataInit\\DataInitPlayer.cs",
+              "RelativeToolTip": "Entity\\DataInit\\DataInitPlayer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T14:35:09.938Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Data.csproj",
+              "DocumentMoniker": "C:\\Users\\Aprendiz\\source\\repos\\diagrama\\Data\\Data.csproj",
+              "RelativeDocumentMoniker": "Data\\Data.csproj",
+              "ToolTip": "C:\\Users\\Aprendiz\\source\\repos\\diagrama\\Data\\Data.csproj",
+              "RelativeToolTip": "Data\\Data.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-07-30T19:16:09.83Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "App.Config",
+              "DocumentMoniker": "C:\\Users\\Aprendiz\\source\\repos\\diagrama\\Diagram\\App.Config",
+              "RelativeDocumentMoniker": "Diagram\\App.Config",
+              "ToolTip": "C:\\Users\\Aprendiz\\source\\repos\\diagrama\\Diagram\\App.Config",
+              "RelativeToolTip": "Diagram\\App.Config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-08-01T19:06:29.421Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "IBaseModelBusiness.cs",
+              "DocumentMoniker": "C:\\Users\\Aprendiz\\source\\repos\\diagrama\\Businnes\\Interface\\IBaseModelBusiness.cs",
+              "RelativeDocumentMoniker": "Businnes\\Interface\\IBaseModelBusiness.cs",
+              "ToolTip": "C:\\Users\\Aprendiz\\source\\repos\\diagrama\\Businnes\\Interface\\IBaseModelBusiness.cs",
+              "RelativeToolTip": "Businnes\\Interface\\IBaseModelBusiness.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T15:30:16.673Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "IBaseModelData.cs",
+              "DocumentMoniker": "C:\\Users\\Aprendiz\\source\\repos\\diagrama\\Data\\interface\\IBaseModelData.cs",
+              "RelativeDocumentMoniker": "Data\\interface\\IBaseModelData.cs",
+              "ToolTip": "C:\\Users\\Aprendiz\\source\\repos\\diagrama\\Data\\interface\\IBaseModelData.cs",
+              "RelativeToolTip": "Data\\interface\\IBaseModelData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T20:09:35.245Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ABaseModelData.cs",
+              "DocumentMoniker": "C:\\Users\\Aprendiz\\source\\repos\\diagrama\\Data\\interface\\ABaseModelData.cs",
+              "RelativeDocumentMoniker": "Data\\interface\\ABaseModelData.cs",
+              "ToolTip": "C:\\Users\\Aprendiz\\source\\repos\\diagrama\\Data\\interface\\ABaseModelData.cs",
+              "RelativeToolTip": "Data\\interface\\ABaseModelData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA4AAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T20:09:54.979Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ABaseModelBusiness.cs",
+              "DocumentMoniker": "C:\\Users\\Aprendiz\\source\\repos\\diagrama\\Businnes\\Interface\\ABaseModelBusiness.cs",
+              "RelativeDocumentMoniker": "Businnes\\Interface\\ABaseModelBusiness.cs",
+              "ToolTip": "C:\\Users\\Aprendiz\\source\\repos\\diagrama\\Businnes\\Interface\\ABaseModelBusiness.cs",
+              "RelativeToolTip": "Businnes\\Interface\\ABaseModelBusiness.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T15:30:06.144Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "BaseModelData.cs",
+              "DocumentMoniker": "C:\\Users\\Aprendiz\\source\\repos\\diagrama\\Data\\Implemets\\BaseModelData.cs",
+              "RelativeDocumentMoniker": "Data\\Implemets\\BaseModelData.cs",
+              "ToolTip": "C:\\Users\\Aprendiz\\source\\repos\\diagrama\\Data\\Implemets\\BaseModelData.cs",
+              "RelativeToolTip": "Data\\Implemets\\BaseModelData.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAgwCkAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T16:01:51.465Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Aprendiz\\source\\repos\\diagrama\\Web\\appsettings.json",
+              "RelativeDocumentMoniker": "Web\\appsettings.json",
+              "ToolTip": "C:\\Users\\Aprendiz\\source\\repos\\diagrama\\Web\\appsettings.json",
+              "RelativeToolTip": "Web\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-08-01T15:07:23.304Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Model1.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Aprendiz\\source\\repos\\diagrama\\Diagram\\Model1.Designer.cs",
+              "RelativeDocumentMoniker": "Diagram\\Model1.Designer.cs",
+              "ToolTip": "C:\\Users\\Aprendiz\\source\\repos\\diagrama\\Diagram\\Model1.Designer.cs",
+              "RelativeToolTip": "Diagram\\Model1.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-29T17:45:00.386Z"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "FloatingWindowState": {
+        "Id": "5e84d044-8767-4a31-9af6-9496310c6eba",
+        "Display": 0,
+        "X": 1158,
+        "Y": 30,
+        "Width": 920,
+        "Height": 773,
+        "WindowState": 0
+      },
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Model1.edmx [Diagram1]",
+              "DocumentMoniker": "C:\\Users\\Aprendiz\\source\\repos\\diagrama\\Diagram\\Model1.edmx",
+              "RelativeDocumentMoniker": "Diagram\\Model1.edmx",
+              "ToolTip": "C:\\Users\\Aprendiz\\source\\repos\\diagrama\\Diagram\\Model1.edmx [Diagram1]",
+              "RelativeToolTip": "Diagram\\Model1.edmx [Diagram1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
+              "WhenOpened": "2025-08-01T12:17:51.752Z",
+              "EditorCaption": " [Diagram1]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
