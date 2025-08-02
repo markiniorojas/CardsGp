@@ -16,18 +16,23 @@
           <EntitySet Name="gamesSet" EntityType="Model1.games" />
           <EntitySet Name="cardSet" EntityType="Model1.card" />
           <EntitySet Name="playersSet" EntityType="Model1.players" />
-          <EntitySet Name="malletSet" EntityType="Model1.mallet" />
-          <AssociationSet Name="playersgames" Association="Model1.playersgames">
+          <EntitySet Name="GamePlayerSet" EntityType="Model1.GamePlayer" />
+          <AssociationSet Name="playersGamePlayer" Association="Model1.playersGamePlayer">
             <End Role="players" EntitySet="playersSet" />
-            <End Role="games" EntitySet="gamesSet" />
+            <End Role="GamePlayer" EntitySet="GamePlayerSet" />
           </AssociationSet>
-          <AssociationSet Name="malletcard" Association="Model1.malletcard">
-            <End Role="mallet" EntitySet="malletSet" />
-            <End Role="card" EntitySet="cardSet" />
-          </AssociationSet>
-          <AssociationSet Name="gamescard" Association="Model1.gamescard">
+          <AssociationSet Name="gamesGamePlayer" Association="Model1.gamesGamePlayer">
             <End Role="games" EntitySet="gamesSet" />
+            <End Role="GamePlayer" EntitySet="GamePlayerSet" />
+          </AssociationSet>
+          <EntitySet Name="PlayerCardSet" EntityType="Model1.PlayerCard" />
+          <AssociationSet Name="GamePlayerPlayerCard" Association="Model1.GamePlayerPlayerCard">
+            <End Role="GamePlayer" EntitySet="GamePlayerSet" />
+            <End Role="PlayerCard" EntitySet="PlayerCardSet" />
+          </AssociationSet>
+          <AssociationSet Name="cardPlayerCard" Association="Model1.cardPlayerCard">
             <End Role="card" EntitySet="cardSet" />
+            <End Role="PlayerCard" EntitySet="PlayerCardSet" />
           </AssociationSet>
         </EntityContainer>
         <EntityType Name="games">
@@ -36,13 +41,11 @@
           </Key>
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="winner" Type="String" Nullable="false" />
-          <NavigationProperty Name="players" Relationship="Model1.playersgames" FromRole="games" ToRole="players" />
-          <Property Name="playersId" Type="Int32" Nullable="false" />
-          <NavigationProperty Name="card" Relationship="Model1.gamescard" FromRole="games" ToRole="card" />
           <Property Name="isDeleted" Type="String" Nullable="false" />
           <Property Name="startTime" Type="String" Nullable="false" />
           <Property Name="endTime" Type="String" Nullable="false" />
           <Property Name="date" Type="String" Nullable="false" />
+          <NavigationProperty Name="GamePlayer" Relationship="Model1.gamesGamePlayer" FromRole="games" ToRole="GamePlayer" />
         </EntityType>
         <EntityType Name="card">
           <Key>
@@ -54,12 +57,9 @@
           <Property Name="hP" Type="String" Nullable="false" />
           <Property Name="finalSpeed" Type="String" Nullable="false" />
           <Property Name="nOclylinder" Type="String" Nullable="false" />
-          <Property Name="status" Type="String" Nullable="false" />
-          <NavigationProperty Name="mallet" Relationship="Model1.malletcard" FromRole="card" ToRole="mallet" />
-          <Property Name="malletId" Type="Int32" Nullable="false" />
-          <NavigationProperty Name="games" Relationship="Model1.gamescard" FromRole="card" ToRole="games" />
-          <Property Name="gamesId" Type="Int32" Nullable="false" />
           <Property Name="isDeleted" Type="String" Nullable="false" />
+          <Property Name="PlayerCardId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="PlayerCard" Relationship="Model1.cardPlayerCard" FromRole="card" ToRole="PlayerCard" />
         </EntityType>
         <EntityType Name="players">
           <Key>
@@ -67,52 +67,78 @@
           </Key>
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="userName" Type="String" Nullable="false" />
-          <NavigationProperty Name="games" Relationship="Model1.playersgames" FromRole="players" ToRole="games" />
           <Property Name="GamesPlayed" Nullable="false" Type="String" />
           <Property Name="isDeleted" Type="String" Nullable="false" />
+          <NavigationProperty Name="GamePlayers" Relationship="Model1.playersGamePlayer" FromRole="players" ToRole="GamePlayer" />
         </EntityType>
-        <EntityType Name="mallet">
+        <EntityType Name="GamePlayer">
           <Key>
             <PropertyRef Name="Id" />
           </Key>
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <NavigationProperty Name="card" Relationship="Model1.malletcard" FromRole="mallet" ToRole="card" />
-          <Property Name="typesDecks" Type="String" Nullable="false" />
-          <Property Name="isDeleted" Type="String" Nullable="false" />
+          <Property Name="Points" Type="Int16" Nullable="false" />
+          <NavigationProperty Name="players" Relationship="Model1.playersGamePlayer" FromRole="GamePlayer" ToRole="players" />
+          <Property Name="playersId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="games" Relationship="Model1.gamesGamePlayer" FromRole="GamePlayer" ToRole="games" />
+          <Property Name="gamesId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="PlayerCard" Relationship="Model1.GamePlayerPlayerCard" FromRole="GamePlayer" ToRole="PlayerCard" />
         </EntityType>
-        <Association Name="playersgames">
+        <Association Name="playersGamePlayer">
           <End Type="Model1.players" Role="players" Multiplicity="1" />
-          <End Type="Model1.games" Role="games" Multiplicity="*" />
+          <End Type="Model1.GamePlayer" Role="GamePlayer" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="players">
               <PropertyRef Name="Id" />
             </Principal>
-            <Dependent Role="games">
+            <Dependent Role="GamePlayer">
               <PropertyRef Name="playersId" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="malletcard">
-          <End Type="Model1.mallet" Role="mallet" Multiplicity="1" />
-          <End Type="Model1.card" Role="card" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="mallet">
-              <PropertyRef Name="Id" />
-            </Principal>
-            <Dependent Role="card">
-              <PropertyRef Name="malletId" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="gamescard">
+        <Association Name="gamesGamePlayer">
           <End Type="Model1.games" Role="games" Multiplicity="1" />
-          <End Type="Model1.card" Role="card" Multiplicity="*" />
+          <End Type="Model1.GamePlayer" Role="GamePlayer" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="games">
               <PropertyRef Name="Id" />
             </Principal>
-            <Dependent Role="card">
+            <Dependent Role="GamePlayer">
               <PropertyRef Name="gamesId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="PlayerCard">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="IsUsed" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="GamePlayer" Relationship="Model1.GamePlayerPlayerCard" FromRole="PlayerCard" ToRole="GamePlayer" />
+          <Property Name="GamePlayerId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="card" Relationship="Model1.cardPlayerCard" FromRole="PlayerCard" ToRole="card" />
+          <Property Name="cardId" Type="Int32" Nullable="false" />
+        </EntityType>
+        <Association Name="GamePlayerPlayerCard">
+          <End Type="Model1.GamePlayer" Role="GamePlayer" Multiplicity="1" />
+          <End Type="Model1.PlayerCard" Role="PlayerCard" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="GamePlayer">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="PlayerCard">
+              <PropertyRef Name="GamePlayerId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="cardPlayerCard">
+          <End Type="Model1.card" Role="card" Multiplicity="1" />
+          <End Type="Model1.PlayerCard" Role="PlayerCard" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="card">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="PlayerCard">
+              <PropertyRef Name="cardId" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
