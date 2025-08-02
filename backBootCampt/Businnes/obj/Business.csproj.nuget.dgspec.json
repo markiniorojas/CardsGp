@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Aprendiz\\source\\repos\\diagrama\\Businnes\\Business.csproj": {}
+    "C:\\ADSO2025\\ProyecBootCamp\\CardsGp\\backBootCampt\\Businnes\\Business.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Aprendiz\\source\\repos\\diagrama\\Businnes\\Business.csproj": {
+    "C:\\ADSO2025\\ProyecBootCamp\\CardsGp\\backBootCampt\\Businnes\\Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Aprendiz\\source\\repos\\diagrama\\Businnes\\Business.csproj",
+        "projectUniqueName": "C:\\ADSO2025\\ProyecBootCamp\\CardsGp\\backBootCampt\\Businnes\\Business.csproj",
         "projectName": "Business",
-        "projectPath": "C:\\Users\\Aprendiz\\source\\repos\\diagrama\\Businnes\\Business.csproj",
-        "packagesPath": "C:\\Users\\Aprendiz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Aprendiz\\source\\repos\\diagrama\\Businnes\\obj\\",
+        "projectPath": "C:\\ADSO2025\\ProyecBootCamp\\CardsGp\\backBootCampt\\Businnes\\Business.csproj",
+        "packagesPath": "C:\\Users\\Marcos\\.nuget\\packages\\",
+        "outputPath": "C:\\ADSO2025\\ProyecBootCamp\\CardsGp\\backBootCampt\\Businnes\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Aprendiz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Marcos\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,17 +26,18 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Aprendiz\\source\\repos\\diagrama\\Data\\Data.csproj": {
-                "projectPath": "C:\\Users\\Aprendiz\\source\\repos\\diagrama\\Data\\Data.csproj"
+              "C:\\ADSO2025\\ProyecBootCamp\\CardsGp\\backBootCampt\\Data\\Data.csproj": {
+                "projectPath": "C:\\ADSO2025\\ProyecBootCamp\\CardsGp\\backBootCampt\\Data\\Data.csproj"
               },
-              "C:\\Users\\Aprendiz\\source\\repos\\diagrama\\Entity\\Entity.csproj": {
-                "projectPath": "C:\\Users\\Aprendiz\\source\\repos\\diagrama\\Entity\\Entity.csproj"
+              "C:\\ADSO2025\\ProyecBootCamp\\CardsGp\\backBootCampt\\Entity\\Entity.csproj": {
+                "projectPath": "C:\\ADSO2025\\ProyecBootCamp\\CardsGp\\backBootCampt\\Entity\\Entity.csproj"
               }
             }
           }
@@ -76,20 +77,20 @@
         }
       }
     },
-    "C:\\Users\\Aprendiz\\source\\repos\\diagrama\\Data\\Data.csproj": {
+    "C:\\ADSO2025\\ProyecBootCamp\\CardsGp\\backBootCampt\\Data\\Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Aprendiz\\source\\repos\\diagrama\\Data\\Data.csproj",
+        "projectUniqueName": "C:\\ADSO2025\\ProyecBootCamp\\CardsGp\\backBootCampt\\Data\\Data.csproj",
         "projectName": "Data",
-        "projectPath": "C:\\Users\\Aprendiz\\source\\repos\\diagrama\\Data\\Data.csproj",
-        "packagesPath": "C:\\Users\\Aprendiz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Aprendiz\\source\\repos\\diagrama\\Data\\obj\\",
+        "projectPath": "C:\\ADSO2025\\ProyecBootCamp\\CardsGp\\backBootCampt\\Data\\Data.csproj",
+        "packagesPath": "C:\\Users\\Marcos\\.nuget\\packages\\",
+        "outputPath": "C:\\ADSO2025\\ProyecBootCamp\\CardsGp\\backBootCampt\\Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Aprendiz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Marcos\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -98,14 +99,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Aprendiz\\source\\repos\\diagrama\\Entity\\Entity.csproj": {
-                "projectPath": "C:\\Users\\Aprendiz\\source\\repos\\diagrama\\Entity\\Entity.csproj"
+              "C:\\ADSO2025\\ProyecBootCamp\\CardsGp\\backBootCampt\\Entity\\Entity.csproj": {
+                "projectPath": "C:\\ADSO2025\\ProyecBootCamp\\CardsGp\\backBootCampt\\Entity\\Entity.csproj"
               }
             }
           }
@@ -145,20 +147,20 @@
         }
       }
     },
-    "C:\\Users\\Aprendiz\\source\\repos\\diagrama\\Entity\\Entity.csproj": {
+    "C:\\ADSO2025\\ProyecBootCamp\\CardsGp\\backBootCampt\\Entity\\Entity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Aprendiz\\source\\repos\\diagrama\\Entity\\Entity.csproj",
+        "projectUniqueName": "C:\\ADSO2025\\ProyecBootCamp\\CardsGp\\backBootCampt\\Entity\\Entity.csproj",
         "projectName": "Entity",
-        "projectPath": "C:\\Users\\Aprendiz\\source\\repos\\diagrama\\Entity\\Entity.csproj",
-        "packagesPath": "C:\\Users\\Aprendiz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Aprendiz\\source\\repos\\diagrama\\Entity\\obj\\",
+        "projectPath": "C:\\ADSO2025\\ProyecBootCamp\\CardsGp\\backBootCampt\\Entity\\Entity.csproj",
+        "packagesPath": "C:\\Users\\Marcos\\.nuget\\packages\\",
+        "outputPath": "C:\\ADSO2025\\ProyecBootCamp\\CardsGp\\backBootCampt\\Entity\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Aprendiz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Marcos\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -167,6 +169,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
