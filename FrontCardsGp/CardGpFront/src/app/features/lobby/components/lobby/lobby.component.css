@@ -1,0 +1,319 @@
+/* Contenedor principal */
+.lobby-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+}
+
+/* Header Section */
+.header-section {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.lobby-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1, #96ceb4);
+  background-size: 400% 400%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientShift 3s ease infinite;
+}
+
+.lobby-subtitle {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  opacity: 0.9;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Contador de jugadores */
+.player-counter {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 300px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.counter-display {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.counter-number {
+  color: #4ecdc4;
+  text-shadow: 0 0 10px rgba(78, 205, 196, 0.5);
+}
+
+.counter-text {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.counter-label {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  opacity: 0.8;
+}
+
+.status-indicator {
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.status-insufficient {
+  background: linear-gradient(45deg, #ff6b6b, #ee5a52);
+  color: white;
+}
+
+.status-ready {
+  background: linear-gradient(45deg, #4ecdc4, #44a08d);
+  color: white;
+  animation: pulse 2s infinite;
+}
+
+.status-full {
+  background: linear-gradient(45deg, #feca57, #ff9ff3);
+  color: #333;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+/* Sección de jugadores */
+.players-section {
+  margin: 40px 0;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #fff;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+.players-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.player-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  position: relative;
+  overflow: hidden;
+}
+
+.player-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+  transition: left 0.5s;
+}
+
+.player-card:hover::before {
+  left: 100%;
+}
+
+.player-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.player-card.active {
+  border-color: #4ecdc4;
+  background: rgba(78, 205, 196, 0.2);
+  box-shadow: 0 0 20px rgba(78, 205, 196, 0.3);
+}
+
+.player-card.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none !important;
+}
+
+.player-avatar {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.player-icon {
+  display: inline-block;
+  padding: 10px;
+  background: linear-gradient(45deg, #667eea, #764ba2);
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  line-height: 40px;
+}
+
+.player-name {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+}
+
+.player-status {
+  color: #4ecdc4;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+/* Botones de acción */
+.action-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 30px 0;
+  flex-wrap: wrap;
+}
+
+.add-player-btn, .clear-players-btn {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 200px;
+  justify-content: center;
+}
+
+.add-player-btn {
+  background: linear-gradient(45deg, #4ecdc4, #44a08d);
+  color: white;
+}
+
+.add-player-btn:hover:not(:disabled) {
+  background: linear-gradient(45deg, #44a08d, #4ecdc4);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(78, 205, 196, 0.4);
+}
+
+.clear-players-btn {
+  background: linear-gradient(45deg, #ff6b6b, #ee5a52);
+  color: white;
+}
+
+.clear-players-btn:hover:not(:disabled) {
+  background: linear-gradient(45deg, #ee5a52, #ff6b6b);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(255, 107, 107, 0.4);
+}
+
+.add-player-btn:disabled, .clear-players-btn:disabled {
+  background: #666;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.btn-icon {
+  font-size: 1.2rem;
+}
+
+/* Sección de inicio */
+.start-section {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.start-button {
+  padding: 15px 40px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: linear-gradient(45deg, #feca57, #ff9ff3);
+  color: #333;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 250px;
+  justify-content: center;
+}
+
+.start-button:hover:not(:disabled) {
+  background: linear-gradient(45deg, #ff9ff3, #feca57);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(254, 202, 87, 0.4);
+}
+
+.start-button:disabled {
+  background: #666;
+  color: #999;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.start-icon {
+  font-size: 1.5rem;
+}
+
+.start-hint {
+  margin-top: 15px;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.8);
+  font-style: italic;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .lobby-title {
+    font-size: 2rem;
+  }
+  
+  .players-grid {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 15px;
+  }
+  
+  .action-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .add-player-btn, .clear-players-btn {
+    min-width: 250px;
+  }
+}
