@@ -5,7 +5,8 @@
     <!-- Avatares -->
     <div class="players">
       <div class="player" *ngFor="let player of players()">
-        <img [src]="player.avatar" [alt]="player.name">
+        <img [src]="player.avatar || '/assets/avatar.png'" [alt]="player.userName">
+        <p>{{ player.userName }}</p>
         <button class="remove" (click)="removePlayer(player.id)">✖</button>
       </div>
 

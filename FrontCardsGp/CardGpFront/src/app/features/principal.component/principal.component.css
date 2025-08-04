@@ -1,0 +1,46 @@
+.background {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('/assets/FondoBienvenida.png') center/cover no-repeat;
+  flex-direction: column;
+}
+
+.content {
+  text-align: center;
+}
+
+.logo {
+  font-size: 4rem;
+  color: white;
+  font-weight: bold;
+}
+
+.subtitle {
+  color: #ccc;
+  margin-bottom: 2rem;
+}
+
+.create-button {
+  background: white;
+  border: none;
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: transform 0.2s ease;
+}
+
+.create-button:hover {
+  transform: scale(1.05);
+}
+
+.icon {
+  font-size: 2rem;
+  color: #003366;
+}

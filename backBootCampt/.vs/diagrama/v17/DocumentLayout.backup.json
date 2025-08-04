@@ -3,6 +3,22 @@
   "WorkspaceRootPath": "C:\\Users\\Camilo\\Desktop\\CardsGp\\backBootCampt\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{BE311675-BED3-4BDF-9FDE-0BA909B2BF7A}|Entity\\Entity.csproj|c:\\users\\camilo\\desktop\\cardsgp\\backbootcampt\\entity\\model\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE311675-BED3-4BDF-9FDE-0BA909B2BF7A}|Entity\\Entity.csproj|solutionrelative:entity\\model\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB6105EA-4D91-4F11-B7E4-882ED47C60ED}|Web\\Web.csproj|c:\\users\\camilo\\desktop\\cardsgp\\backbootcampt\\web\\controllers\\controllerservices\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB6105EA-4D91-4F11-B7E4-882ED47C60ED}|Web\\Web.csproj|solutionrelative:web\\controllers\\controllerservices\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB6105EA-4D91-4F11-B7E4-882ED47C60ED}|Web\\Web.csproj|c:\\users\\camilo\\desktop\\cardsgp\\backbootcampt\\web\\controllers\\controllerservices\\rankingcontroller .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB6105EA-4D91-4F11-B7E4-882ED47C60ED}|Web\\Web.csproj|solutionrelative:web\\controllers\\controllerservices\\rankingcontroller .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB6105EA-4D91-4F11-B7E4-882ED47C60ED}|Web\\Web.csproj|c:\\users\\camilo\\desktop\\cardsgp\\backbootcampt\\web\\controllers\\controllerservices\\cardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB6105EA-4D91-4F11-B7E4-882ED47C60ED}|Web\\Web.csproj|solutionrelative:web\\controllers\\controllerservices\\cardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{BB6105EA-4D91-4F11-B7E4-882ED47C60ED}|Web\\Web.csproj|c:\\users\\camilo\\desktop\\cardsgp\\backbootcampt\\web\\controllers\\genericcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BB6105EA-4D91-4F11-B7E4-882ED47C60ED}|Web\\Web.csproj|solutionrelative:web\\controllers\\genericcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -13,18 +29,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{BB6105EA-4D91-4F11-B7E4-882ED47C60ED}|Web\\Web.csproj|c:\\users\\camilo\\desktop\\cardsgp\\backbootcampt\\web\\controllers\\controllerservices\\roundcontroller .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BB6105EA-4D91-4F11-B7E4-882ED47C60ED}|Web\\Web.csproj|solutionrelative:web\\controllers\\controllerservices\\roundcontroller .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB6105EA-4D91-4F11-B7E4-882ED47C60ED}|Web\\Web.csproj|c:\\users\\camilo\\desktop\\cardsgp\\backbootcampt\\web\\controllers\\controllerservices\\rankingcontroller .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB6105EA-4D91-4F11-B7E4-882ED47C60ED}|Web\\Web.csproj|solutionrelative:web\\controllers\\controllerservices\\rankingcontroller .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB6105EA-4D91-4F11-B7E4-882ED47C60ED}|Web\\Web.csproj|c:\\users\\camilo\\desktop\\cardsgp\\backbootcampt\\web\\controllers\\controllerservices\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB6105EA-4D91-4F11-B7E4-882ED47C60ED}|Web\\Web.csproj|solutionrelative:web\\controllers\\controllerservices\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB6105EA-4D91-4F11-B7E4-882ED47C60ED}|Web\\Web.csproj|c:\\users\\camilo\\desktop\\cardsgp\\backbootcampt\\web\\controllers\\controllerservices\\cardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB6105EA-4D91-4F11-B7E4-882ED47C60ED}|Web\\Web.csproj|solutionrelative:web\\controllers\\controllerservices\\cardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0F902E35-AE92-4CA4-86F6-3B60470A9FA1}|Businnes\\Business.csproj|c:\\users\\camilo\\desktop\\cardsgp\\backbootcampt\\businnes\\services\\roundservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -107,19 +111,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Player.cs",
+              "DocumentMoniker": "C:\\Users\\Camilo\\Desktop\\CardsGp\\backBootCampt\\Entity\\Model\\Player.cs",
+              "RelativeDocumentMoniker": "Entity\\Model\\Player.cs",
+              "ToolTip": "C:\\Users\\Camilo\\Desktop\\CardsGp\\backBootCampt\\Entity\\Model\\Player.cs",
+              "RelativeToolTip": "Entity\\Model\\Player.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-04T05:27:54.193Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "GenericController.cs",
               "DocumentMoniker": "C:\\Users\\Camilo\\Desktop\\CardsGp\\backBootCampt\\Web\\Controllers\\GenericController.cs",
               "RelativeDocumentMoniker": "Web\\Controllers\\GenericController.cs",
               "ToolTip": "C:\\Users\\Camilo\\Desktop\\CardsGp\\backBootCampt\\Web\\Controllers\\GenericController.cs",
               "RelativeToolTip": "Web\\Controllers\\GenericController.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAwCIAAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAxwCIAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-04T04:35:30.107Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "GamesController.cs",
               "DocumentMoniker": "C:\\Users\\Camilo\\Desktop\\CardsGp\\backBootCampt\\Web\\Controllers\\GamesController.cs",
               "RelativeDocumentMoniker": "Web\\Controllers\\GamesController.cs",
@@ -127,51 +144,50 @@
               "RelativeToolTip": "Web\\Controllers\\GamesController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-04T04:35:28.937Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-04T04:35:28.937Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "RankingController .cs",
               "DocumentMoniker": "C:\\Users\\Camilo\\Desktop\\CardsGp\\backBootCampt\\Web\\Controllers\\ControllerServices\\RankingController .cs",
               "RelativeDocumentMoniker": "Web\\Controllers\\ControllerServices\\RankingController .cs",
               "ToolTip": "C:\\Users\\Camilo\\Desktop\\CardsGp\\backBootCampt\\Web\\Controllers\\ControllerServices\\RankingController .cs",
               "RelativeToolTip": "Web\\Controllers\\ControllerServices\\RankingController .cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-04T04:35:08.441Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "PlayerController.cs",
               "DocumentMoniker": "C:\\Users\\Camilo\\Desktop\\CardsGp\\backBootCampt\\Web\\Controllers\\ControllerServices\\PlayerController.cs",
               "RelativeDocumentMoniker": "Web\\Controllers\\ControllerServices\\PlayerController.cs",
               "ToolTip": "C:\\Users\\Camilo\\Desktop\\CardsGp\\backBootCampt\\Web\\Controllers\\ControllerServices\\PlayerController.cs",
               "RelativeToolTip": "Web\\Controllers\\ControllerServices\\PlayerController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-04T04:35:04.34Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "CardController.cs",
               "DocumentMoniker": "C:\\Users\\Camilo\\Desktop\\CardsGp\\backBootCampt\\Web\\Controllers\\ControllerServices\\CardController.cs",
               "RelativeDocumentMoniker": "Web\\Controllers\\ControllerServices\\CardController.cs",
-              "ToolTip": "C:\\Users\\Camilo\\Desktop\\CardsGp\\backBootCampt\\Web\\Controllers\\ControllerServices\\CardController.cs",
-              "RelativeToolTip": "Web\\Controllers\\ControllerServices\\CardController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Camilo\\Desktop\\CardsGp\\backBootCampt\\Web\\Controllers\\ControllerServices\\CardController.cs*",
+              "RelativeToolTip": "Web\\Controllers\\ControllerServices\\CardController.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-04T04:34:58.867Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "20250803235259_initial.cs",
               "DocumentMoniker": "C:\\Users\\Camilo\\Desktop\\CardsGp\\backBootCampt\\Entity\\Migrations\\20250803235259_initial.cs",
               "RelativeDocumentMoniker": "Entity\\Migrations\\20250803235259_initial.cs",
@@ -183,7 +199,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "ServicesRepository.cs",
               "DocumentMoniker": "C:\\Users\\Camilo\\Desktop\\CardsGp\\backBootCampt\\Web\\ServicesExtensions\\ServicesRepository.cs",
               "RelativeDocumentMoniker": "Web\\ServicesExtensions\\ServicesRepository.cs",
@@ -195,7 +211,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "RoundResultDto.cs",
               "DocumentMoniker": "C:\\Users\\Camilo\\Desktop\\CardsGp\\backBootCampt\\Entity\\Dto\\RoundResultDto.cs",
               "RelativeDocumentMoniker": "Entity\\Dto\\RoundResultDto.cs",
@@ -207,7 +223,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "TurnController .cs",
               "DocumentMoniker": "C:\\Users\\Camilo\\Desktop\\CardsGp\\backBootCampt\\Web\\Controllers\\ControllerServices\\TurnController .cs",
               "RelativeDocumentMoniker": "Web\\Controllers\\ControllerServices\\TurnController .cs",
@@ -219,7 +235,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "RoundController .cs",
               "DocumentMoniker": "C:\\Users\\Camilo\\Desktop\\CardsGp\\backBootCampt\\Web\\Controllers\\ControllerServices\\RoundController .cs",
               "RelativeDocumentMoniker": "Web\\Controllers\\ControllerServices\\RoundController .cs",
@@ -227,12 +243,11 @@
               "RelativeToolTip": "Web\\Controllers\\ControllerServices\\RoundController .cs",
               "ViewState": "AgIAAB0AAAAAAAAAAAAAAEUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-03T23:41:51.843Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-03T23:41:51.843Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "20250803224337_initial.cs",
               "DocumentMoniker": "C:\\Users\\Camilo\\Desktop\\CardsGp\\backBootCampt\\Entity\\Migrations\\20250803224337_initial.cs",
               "RelativeDocumentMoniker": "Entity\\Migrations\\20250803224337_initial.cs",
@@ -244,7 +259,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "TurnService.cs",
               "DocumentMoniker": "C:\\Users\\Camilo\\Desktop\\CardsGp\\backBootCampt\\Businnes\\Services\\TurnService.cs",
               "RelativeDocumentMoniker": "Businnes\\Services\\TurnService.cs",
@@ -256,7 +271,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "RoundService.cs",
               "DocumentMoniker": "C:\\Users\\Camilo\\Desktop\\CardsGp\\backBootCampt\\Businnes\\Services\\RoundService.cs",
               "RelativeDocumentMoniker": "Businnes\\Services\\RoundService.cs",
@@ -264,12 +279,11 @@
               "RelativeToolTip": "Businnes\\Services\\RoundService.cs",
               "ViewState": "AgIAAK0AAAAAAAAAAAAkwN0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-03T22:23:09.145Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-03T22:23:09.145Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "RankingService.cs",
               "DocumentMoniker": "C:\\Users\\Camilo\\Desktop\\CardsGp\\backBootCampt\\Businnes\\Services\\RankingService.cs",
               "RelativeDocumentMoniker": "Businnes\\Services\\RankingService.cs",
@@ -277,12 +291,11 @@
               "RelativeToolTip": "Businnes\\Services\\RankingService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-03T22:23:06.721Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-03T22:23:06.721Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "PlayerService.cs",
               "DocumentMoniker": "C:\\Users\\Camilo\\Desktop\\CardsGp\\backBootCampt\\Businnes\\Services\\PlayerService.cs",
               "RelativeDocumentMoniker": "Businnes\\Services\\PlayerService.cs",
@@ -290,12 +303,11 @@
               "RelativeToolTip": "Businnes\\Services\\PlayerService.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAQwDMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-03T22:22:59.798Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-03T22:22:59.798Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "CardAssignmentService.cs",
               "DocumentMoniker": "C:\\Users\\Camilo\\Desktop\\CardsGp\\backBootCampt\\Businnes\\Services\\CardAssignmentService.cs",
               "RelativeDocumentMoniker": "Businnes\\Services\\CardAssignmentService.cs",
@@ -307,7 +319,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "20250803221735_initial.cs",
               "DocumentMoniker": "C:\\Users\\Camilo\\Desktop\\CardsGp\\backBootCampt\\Entity\\Migrations\\20250803221735_initial.cs",
               "RelativeDocumentMoniker": "Entity\\Migrations\\20250803221735_initial.cs",
@@ -319,7 +331,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\Camilo\\Desktop\\CardsGp\\backBootCampt\\Web\\appsettings.json",
               "RelativeDocumentMoniker": "Web\\appsettings.json",
@@ -331,7 +343,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "20250803220814_initial.cs",
               "DocumentMoniker": "C:\\Users\\Camilo\\Desktop\\CardsGp\\backBootCampt\\Entity\\Migrations\\20250803220814_initial.cs",
               "RelativeDocumentMoniker": "Entity\\Migrations\\20250803220814_initial.cs",
@@ -343,7 +355,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "DataInitPlayer.cs",
               "DocumentMoniker": "C:\\Users\\Camilo\\Desktop\\CardsGp\\backBootCampt\\Entity\\DataInit\\DataInitPlayer.cs",
               "RelativeDocumentMoniker": "Entity\\DataInit\\DataInitPlayer.cs",
@@ -355,7 +367,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "DataInitGamePlayers.cs",
               "DocumentMoniker": "C:\\Users\\Camilo\\Desktop\\CardsGp\\backBootCampt\\Entity\\DataInit\\DataInitGamePlayers.cs",
               "RelativeDocumentMoniker": "Entity\\DataInit\\DataInitGamePlayers.cs",
@@ -367,7 +379,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "DataInitGames.cs",
               "DocumentMoniker": "C:\\Users\\Camilo\\Desktop\\CardsGp\\backBootCampt\\Entity\\DataInit\\DataInitGames.cs",
               "RelativeDocumentMoniker": "Entity\\DataInit\\DataInitGames.cs",
@@ -379,7 +391,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "DataInitCard.cs",
               "DocumentMoniker": "C:\\Users\\Camilo\\Desktop\\CardsGp\\backBootCampt\\Entity\\DataInit\\DataInitCard.cs",
               "RelativeDocumentMoniker": "Entity\\DataInit\\DataInitCard.cs",
