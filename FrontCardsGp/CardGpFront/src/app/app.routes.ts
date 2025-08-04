@@ -18,6 +18,13 @@ export const routes: Routes = [
   { path: 'lobby', loadComponent: () => 
     import('./features/lobby/components/lobby/lobby.component').then(m => m.LobbyComponent) 
   },
+  {path: 'partida', loadComponent: () =>
+    import('./Components/board/board').then(m => m.Board)
+  },
+
+  {path: 'panel', loadComponent: () =>
+    import('./Components/player-panel/player-panel').then(m => m.PlayerPanel)
+  },
 
   { path: '**', redirectTo: 'entry'}
 
