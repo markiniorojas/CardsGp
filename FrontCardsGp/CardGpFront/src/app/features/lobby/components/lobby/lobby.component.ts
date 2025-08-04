@@ -2,11 +2,13 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { PRESET_PLAYERS } from '../../../../shared/data/player.config';
 import { Player } from '../../../../shared/models/player.model';
+import { MatIconModule } from "@angular/material/icon";
+
 
 @Component({
   selector: 'app-lobby',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, MatIconModule],
   templateUrl: './lobby.component.html',
   styleUrl: './lobby.component.css'
 })
@@ -52,9 +54,12 @@ export class LobbyComponent {
   addRandomPlayer() {
     const availablePlayers = this.getAvailablePlayers();
     if (availablePlayers.length > 0 && this.activePlayers.length < this.MAX_PLAYERS) {
-      const randomIndex = Math.floor(Math.random() * availablePlayers.length);
-      const randomPlayer = availablePlayers[randomIndex];
-      this.activePlayers.push(randomPlayer);
+      for (let i = 0; i < availablePlayers.length; i++) {
+        const randomPlayer = availablePlayers[i];
+        this.activePlayers.push(randomPlayer);
+        break;
+      }
+
     }
   }
 
@@ -64,7 +69,7 @@ export class LobbyComponent {
 
   canStartGame(): boolean {
     return this.activePlayers.length >= this.MIN_PLAYERS &&
-           this.activePlayers.length <= this.MAX_PLAYERS;
+      this.activePlayers.length <= this.MAX_PLAYERS;
   }
 
   startGame() {
@@ -80,21 +85,6 @@ export class LobbyComponent {
     if (count < this.MIN_PLAYERS) return 'status-insufficient';
     if (count >= this.MIN_PLAYERS && count <= this.MAX_PLAYERS) return 'status-ready';
     return 'status-full';
-  }
-
-  getStatusMessage(): string {
-    const count = this.activePlayers.length;
-    if (count === 0) return 'Sin jugadores';
-    if (count < this.MIN_PLAYERS) return `Faltan ${this.MIN_PLAYERS - count} jugadores`;
-    if (count >= this.MIN_PLAYERS && count <= this.MAX_PLAYERS) return '¡Listo para jugar!';
-    return 'Sala llena';
-  }
-
-  getStartButtonText(): string {
-    if (this.canStartGame()) {
-      return `Iniciar Juego (${this.activePlayers.length} jugadores)`;
-    }
-    return 'Iniciar Juego';
   }
 
   getStartHint(): string {

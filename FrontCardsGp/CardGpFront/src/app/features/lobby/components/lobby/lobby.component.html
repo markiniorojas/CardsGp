@@ -1,7 +1,8 @@
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 <div class="lobby-container">
   <div class="header-section">
     <h1 class="lobby-title">🎮 Sala de Juego</h1>
-    <p class="lobby-subtitle">Selecciona entre 2 y 7 jugadores para comenzar</p>
   </div>
 
   <!-- Contador de jugadores activos -->
@@ -11,61 +12,43 @@
       <span class="counter-text">/ {{ MAX_PLAYERS }}</span>
     </div>
     <div class="counter-label">Jugadores Activos</div>
-    <div class="status-indicator" [class]="getStatusClass()">
-      {{ getStatusMessage() }}
-    </div>
   </div>
 
   <!-- Sección de jugadores disponibles -->
   <div class="players-section">
-    <h3 class="section-title">👥 Jugadores Disponibles</h3>
+    <h3 class="section-title"> <mat-icon class="userPlayers">groups</mat-icon> Jugadores Disponibles</h3>
     <div class="players-grid">
-      <div
-        class="player-card"
-        *ngFor="let player of allPlayers"
-        [class.active]="isActive(player)"
-        [class.disabled]="!isActive(player) && activePlayers.length >= MAX_PLAYERS"
-        (click)="togglePlayer(player)"
-      >
+      <div class="player-card" *ngFor="let player of allPlayers" [class.active]="isActive(player)"
+        [class.disabled]="!isActive(player) && activePlayers.length >= MAX_PLAYERS" (click)="togglePlayer(player)">
         <div class="player-avatar">
           <span class="player-icon">👤</span>
         </div>
         <div class="player-name">{{ player.name }}</div>
-        <div class="player-status" *ngIf="isActive(player)">✓ Activo</div>
+        <div class="player-status" *ngIf="isActive(player)"> <mat-icon>check</mat-icon> Activo</div>
       </div>
     </div>
   </div>
 
   <!-- Botones de acción -->
   <div class="action-buttons">
-    <button
-      class="add-player-btn"
+    <button class="add-player-btn"
       [disabled]="activePlayers.length >= MAX_PLAYERS || getAvailablePlayers().length === 0"
-      (click)="addRandomPlayer()"
-    >
-      <span class="btn-icon">➕</span>
-      Agregar Jugador Aleatorio
+      (click)="addRandomPlayer()">
+      <mat-icon>add</mat-icon>
+      Agregar Jugador
     </button>
-    
-    <button
-      class="clear-players-btn"
-      [disabled]="activePlayers.length === 0"
-      (click)="clearAllPlayers()"
-    >
-      <span class="btn-icon">🗑️</span>
+
+    <button class="clear-players-btn" [disabled]="activePlayers.length === 0" (click)="clearAllPlayers()">
+      <mat-icon> delete </mat-icon>
       Limpiar Sala
     </button>
   </div>
 
   <!-- Botón de inicio -->
   <div class="start-section">
-    <button
-      class="start-button"
-      [disabled]="!canStartGame()"
-      (click)="startGame()"
-    >
-      <span class="start-icon">🚀</span>
-      {{ getStartButtonText() }}
+    <button class="start-button" [disabled]="!canStartGame()" (click)="startGame()">
+      <mat-icon>rocket</mat-icon>
+      Iniciar Juego
     </button>
     <div class="start-hint" *ngIf="!canStartGame()">
       {{ getStartHint() }}
