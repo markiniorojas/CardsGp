@@ -5,3 +5,10 @@ C:\Users\Aprendiz\source\repos\diagrama\Diagram\obj\Debug\Diagram.csproj.Assembl
 C:\Users\Aprendiz\source\repos\diagrama\Diagram\obj\Debug\Diagram.csproj.CoreCompileInputs.cache
 C:\Users\Aprendiz\source\repos\diagrama\Diagram\obj\Debug\Diagram.dll
 C:\Users\Aprendiz\source\repos\diagrama\Diagram\obj\Debug\Diagram.pdb
+C:\Users\Camilo\Desktop\CardsGp\backBootCampt\Diagram\bin\Debug\Diagram.dll.config
+C:\Users\Camilo\Desktop\CardsGp\backBootCampt\Diagram\bin\Debug\Diagram.dll
+C:\Users\Camilo\Desktop\CardsGp\backBootCampt\Diagram\bin\Debug\Diagram.pdb
+C:\Users\Camilo\Desktop\CardsGp\backBootCampt\Diagram\obj\Debug\Diagram.csproj.AssemblyReference.cache
+C:\Users\Camilo\Desktop\CardsGp\backBootCampt\Diagram\obj\Debug\Diagram.csproj.CoreCompileInputs.cache
+C:\Users\Camilo\Desktop\CardsGp\backBootCampt\Diagram\obj\Debug\Diagram.dll
+C:\Users\Camilo\Desktop\CardsGp\backBootCampt\Diagram\obj\Debug\Diagram.pdb

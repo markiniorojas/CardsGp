@@ -60,6 +60,8 @@
           <Property Name="isDeleted" Type="String" Nullable="false" />
           <Property Name="PlayerCardId" Type="Int32" Nullable="false" />
           <NavigationProperty Name="PlayerCard" Relationship="Model1.cardPlayerCard" FromRole="card" ToRole="PlayerCard" />
+          <Property Name="weight" Type="String" Nullable="false" />
+          <Property Name="torque" Type="String" Nullable="false" />
         </EntityType>
         <EntityType Name="players">
           <Key>
@@ -67,7 +69,6 @@
           </Key>
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="userName" Type="String" Nullable="false" />
-          <Property Name="GamesPlayed" Nullable="false" Type="String" />
           <Property Name="isDeleted" Type="String" Nullable="false" />
           <NavigationProperty Name="GamePlayers" Relationship="Model1.playersGamePlayer" FromRole="players" ToRole="GamePlayer" />
         </EntityType>

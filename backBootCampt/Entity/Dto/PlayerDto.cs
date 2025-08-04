@@ -10,8 +10,5 @@ namespace Entity.Model
     public class PlayerDto : BaseDto
     {
         public string userName { get; set; }
-        public int itemsEntered { get; set; }
-
-        public Games Games { get; set; }
     }
 }
