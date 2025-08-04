@@ -1,6 +1,27 @@
 import { Routes } from '@angular/router';
 
 export const routes: Routes = [
+  
+  { path: '', redirectTo: 'entry', pathMatch: 'full' },
+
+//   { path: 'game', loadChildren: () => import('./features/game/game.module').then(m => m.GameModule) },
+  {
+    path: 'entry', loadComponent: () =>
+      import('./features/entry.component/entry.component').then(m => m.EntryComponent)
+  },
+
+  {
+    path: 'principal', loadComponent: () =>
+      import('./features/principal.component/principal.component').then(m =>m.PrincipalComponent)
+  },
+                                  
+  { path: 'lobby', loadComponent: () => 
+    import('./features/lobby/components/lobby/lobby.component').then(m => m.LobbyComponent) 
+  },
+
+  { path: '**', redirectTo: 'entry'}
+
+];
 // <<<<<<< HEAD
 //   {
 //     path: 'entry',
@@ -20,7 +41,7 @@ export const routes: Routes = [
 //       {
 //         path: 'juego',
 //         loadComponent: () =>
-//           import('./juego/juego').then(m => m.Juego) // ✅ Asegúrate que así se exporta
+//           import('./juego/juego').then(m => m.Juego) // Asegúrate que así se exporta
 //       },
 //       {
 //         path: '',
@@ -40,9 +61,5 @@ export const routes: Routes = [
 //   }
 // ];
 
-  { path: '', redirectTo: 'lobby', pathMatch: 'full' },
-  { path: 'lobby', loadComponent: () => import('./features/lobby/components/lobby/lobby.component').then(m => m.LobbyComponent) },
-//   { path: 'game', loadChildren: () => import('./features/game/game.module').then(m => m.GameModule) },
-  { path: '**', redirectTo: 'lobby' }
-];
+  
 

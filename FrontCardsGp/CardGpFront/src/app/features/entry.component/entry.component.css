@@ -1,19 +1,23 @@
 /* Fondo */
 .background {
-  min-height: 100vh;
+  min-height: 100%;
   width: 100%;
-  display: flex;
   justify-content: center;
-  align-items: center;
   background: url('/assets/FondoBienvenida.png') center/cover no-repeat;
+  position: fixed;
+  top: 0%;
+  left: 0%;
 }
 
 /* Tarjeta */
 .card {
+  
+  margin-top: 10vh;
+  margin-left: 60vh;
   background: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(8px);
-  padding: 2rem;
-  border-radius: 1.5rem;
+  backdrop-filter: blur(2vh);
+  padding: 2vh;
+  border-radius: 4vh;
   max-width: 80vh;
   width: 80vh;
   max-height: 70vh;
@@ -27,7 +31,7 @@
   color: #FF8400;
   font-size: 7vh;
   font-weight: bold;
-  margin-bottom: 1rem;
+  margin-bottom: 8vh;
 }
 
 /* Párrafo */

@@ -11,6 +11,6 @@ export class EntryComponent {
  constructor(private router: Router) {}
 
   irAPrincipal() {
-    this.router.navigate(['/entry/principal']);
+    this.router.navigate(['/principal']);
   }
 }
