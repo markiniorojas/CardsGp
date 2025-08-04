@@ -1,0 +1,32 @@
+<div class="board">
+  <div class="players left">
+    <app-player-panel 
+      *ngFor="let p of players.slice(0,3)" 
+      [name]="p.name"
+      [avatar]="p.avatar"
+      [cardsCount]="p.cards"
+      [isCurrent]="p.name === 'polit01'">
+    </app-player-panel>
+  </div>
+
+  <div class="center-cards">
+    <div class="empty-slot" *ngFor="let _ of [1,2,3,4]"></div>
+  </div>
+
+  <div class="players right">
+    <app-player-panel 
+      *ngFor="let p of players.slice(3)" 
+      [name]="p.name"
+      [avatar]="p.avatar"
+      [cardsCount]="p.cards"
+      [isCurrent]="false">
+    </app-player-panel>
+  </div>
+</div>
+
+<!-- Card Carousel at Bottom -->
+<app-card-carousel 
+  [cards]="myCards"
+  [selectedIndex]="selectedCardIndex"
+  (cardSelected)="selectCard($event)">
+</app-card-carousel>

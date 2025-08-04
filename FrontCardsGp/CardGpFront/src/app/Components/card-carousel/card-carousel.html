@@ -1,0 +1,14 @@
+<div class="carousel-container">
+  <div class="cards-wrapper">
+    <app-card 
+      *ngFor="let card of cards; let i = index"
+      [card]="card"
+      [selected]="i === selectedIndex"
+      (select)="onCardClick(i)">
+    </app-card>
+  </div>
+
+  <button *ngIf="selectedIndex !== null" class="launch-btn">
+    LANZAR
+  </button>
+</div>

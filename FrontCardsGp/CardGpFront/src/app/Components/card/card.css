@@ -1,0 +1,18 @@
+.card-container {
+  cursor: pointer;
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.card-container:hover {
+  filter: brightness(70%);
+}
+
+.card-container.selected {
+  border: 3px solid #00ffcc;
+  transform: scale(1.05);
+}
+
+.card-img {
+  width: 150px;
+  border-radius: 8px;
+}
