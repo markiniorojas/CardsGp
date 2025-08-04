@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 
 namespace Data.@interface
 {
-    public interface IBaseModelData<T> where T : BaseModel
+    public interface IBaseModelData<TEntity, TDto> where TEntity : BaseModel where TDto : BaseDto
     {
-        Task<IEnumerable<T>> GetAllAsync();
-        Task<T> GetById(int id);
-        Task<T> Create(T entity);
-        Task<T> Update(T entity);
+        Task<IEnumerable<TDto>> GetAllAsync();
+        Task<TEntity> GetById(int id);
+        Task<TEntity> Create(TEntity entity);
+        Task<TEntity> Update(TEntity entity);
         Task<bool> deleteLogico(int id);
     }
 }

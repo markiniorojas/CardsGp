@@ -12,10 +12,7 @@ namespace Entity.Model
         public int winner { get; set; }
         public string startTime { get; set; }
         public string endTime { get; set; }
-        public DateTime date { get; set; }
-
-        public List<Player> players { get; set; } = new List<Player>();
-
-        public Card Card { get; set; }
+        public DateTime date { get; set; } = DateTime.Now;
+        public ICollection<GamePlayer> GamePlayers { get; set; } = new List<GamePlayer>();
     }
 }

@@ -7,11 +7,11 @@ using System.Threading.Tasks;
 
 namespace Business.Interface
 {
-    public abstract class ABaseModelBusiness<T> : IBaseModelBusiness<T> where T : BaseModel
+    public abstract class ABaseModelBusiness<T,D> : IBaseModelBusiness<T,D> where D : BaseDto where T : BaseModel
     {
-        public abstract Task<IEnumerable<T>> GetAllAsync();
-        public abstract Task<T> GetById(int id);
-        public abstract Task<T> Create(T entity);
+        public abstract Task<IEnumerable<D>> GetAllAsync();
+        public abstract Task<D> GetById(int id);
+        public abstract Task<D> Create(D entity);
         public abstract Task<bool> deleteLogico(int id);
     }
 }

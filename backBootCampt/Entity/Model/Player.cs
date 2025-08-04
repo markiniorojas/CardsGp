@@ -10,8 +10,8 @@ namespace Entity.Model
     public class Player : BaseModel
     {
         public string userName { get; set; }
-        public int itemsEntered { get; set; }
+        public bool IsEnabled { get; set; } = false;
+        public ICollection<GamePlayer> GamePlayers { get; set; } = new List<GamePlayer>();
 
-        public Games Games { get; set; }
     }
 }

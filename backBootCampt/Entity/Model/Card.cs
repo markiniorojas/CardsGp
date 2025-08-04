@@ -9,14 +9,14 @@ namespace Entity.Model
 {
     public class Card : BaseModel
     {
-        public string cardName {  get; set; }
+        public string cardName { get; set; }
         public decimal cylinderCapacity { get; set; }
-        public int hP {  get; set; }
-        public int finalSpeed { get; set; }
-        public int nOclylinder {  get; set; }
-        public bool status { get; set; }
-
-        public List<Card> card { get; set; } = new List<Card>();
-        public List<Mallet> mallet { get; set; } = new List<Mallet>();
+        public decimal hP { get; set; }
+        public decimal finalSpeed { get; set; }
+        public decimal nOclylinder {  get; set; }
+        public string weight { get; set; }
+        public decimal torque { get; set; }
+        public ICollection<PlayerCard> PlayerCards { get; set; } = new List<PlayerCard>();
     }
 }
+
