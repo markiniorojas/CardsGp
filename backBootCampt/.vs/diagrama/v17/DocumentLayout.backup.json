@@ -116,7 +116,7 @@
               "RelativeDocumentMoniker": "Entity\\Model\\Player.cs",
               "ToolTip": "C:\\Users\\Camilo\\Desktop\\CardsGp\\backBootCampt\\Entity\\Model\\Player.cs",
               "RelativeToolTip": "Entity\\Model\\Player.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-04T05:27:54.193Z",
               "EditorCaption": ""
@@ -131,8 +131,7 @@
               "RelativeToolTip": "Web\\Controllers\\GenericController.cs",
               "ViewState": "AgIAAA8AAAAAAAAAAAAxwCIAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-04T04:35:30.107Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-04T04:35:30.107Z"
             },
             {
               "$type": "Document",
@@ -156,8 +155,7 @@
               "RelativeToolTip": "Web\\Controllers\\ControllerServices\\RankingController .cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-04T04:35:08.441Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-04T04:35:08.441Z"
             },
             {
               "$type": "Document",
@@ -169,8 +167,7 @@
               "RelativeToolTip": "Web\\Controllers\\ControllerServices\\PlayerController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-04T04:35:04.34Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-04T04:35:04.34Z"
             },
             {
               "$type": "Document",
@@ -178,12 +175,11 @@
               "Title": "CardController.cs",
               "DocumentMoniker": "C:\\Users\\Camilo\\Desktop\\CardsGp\\backBootCampt\\Web\\Controllers\\ControllerServices\\CardController.cs",
               "RelativeDocumentMoniker": "Web\\Controllers\\ControllerServices\\CardController.cs",
-              "ToolTip": "C:\\Users\\Camilo\\Desktop\\CardsGp\\backBootCampt\\Web\\Controllers\\ControllerServices\\CardController.cs*",
-              "RelativeToolTip": "Web\\Controllers\\ControllerServices\\CardController.cs*",
+              "ToolTip": "C:\\Users\\Camilo\\Desktop\\CardsGp\\backBootCampt\\Web\\Controllers\\ControllerServices\\CardController.cs",
+              "RelativeToolTip": "Web\\Controllers\\ControllerServices\\CardController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-04T04:34:58.867Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-04T04:34:58.867Z"
             },
             {
               "$type": "Document",

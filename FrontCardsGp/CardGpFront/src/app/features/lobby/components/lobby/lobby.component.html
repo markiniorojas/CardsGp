@@ -1,57 +1,86 @@
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
 
 <div class="lobby-container">
+  <!-- 🧠 Título principal -->
   <div class="header-section">
-    <h1 class="lobby-title">🎮 Sala de Juego</h1>
+    <h1 class="lobby-title">🎮 Jugadores Habilitados</h1>
   </div>
 
-  <!-- Contador de jugadores activos -->
+  <!-- 📊 Contador de jugadores activos -->
   <div class="player-counter">
     <div class="counter-display">
-      <span class="counter-number">{{ activePlayers.length }}</span>
-      <span class="counter-text">/ {{ MAX_PLAYERS }}</span>
+      <span class="counter-number">{{ enabledPlayers.length }}</span>
+      <span class="counter-text">/ 8</span>
     </div>
     <div class="counter-label">Jugadores Activos</div>
   </div>
 
-  <!-- Sección de jugadores disponibles -->
-  <div class="players-section">
-    <h3 class="section-title"> <mat-icon class="userPlayers">groups</mat-icon> Jugadores Disponibles</h3>
+  <!-- 👥 Lista de jugadores habilitados -->
+  <div class="players-section" *ngIf="enabledPlayers.length > 0; else loading">
+    <h3 class="section-title">
+      <mat-icon class="userPlayers">groups</mat-icon>
+      Lista de Jugadores Habilitados
+    </h3>
+
     <div class="players-grid">
-      <div class="player-card" *ngFor="let player of allPlayers" [class.active]="isActive(player)"
-        [class.disabled]="!isActive(player) && activePlayers.length >= MAX_PLAYERS" (click)="togglePlayer(player)">
+      <div class="player-card"
+           *ngFor="let player of enabledPlayers"
+           [class.locked]="player.id === 1"
+           (click)="onPlayerClick(player)"
+           [title]="player.id === 1 ? 'Este jugador no se puede deshabilitar' : 'Haz clic para deshabilitar'">
         <div class="player-avatar">
           <span class="player-icon">👤</span>
         </div>
-        <div class="player-name">{{ player.name }}</div>
-        <div class="player-status" *ngIf="isActive(player)"> <mat-icon>check</mat-icon> Activo</div>
+
+        <div class="player-name">
+          {{ player.userName }}
+        </div>
+
+        <div class="player-status">
+          <mat-icon>check</mat-icon> Activo
+        </div>
       </div>
     </div>
   </div>
 
-  <!-- Botones de acción -->
+  <!-- 🕐 Template de carga -->
+  <ng-template #loading>
+    <div class="loading-message">
+      <mat-icon>hourglass_empty</mat-icon>
+      Cargando jugadores...
+    </div>
+  </ng-template>
+
+  <!-- 🧹 Botones de acción -->
   <div class="action-buttons">
-    <button class="add-player-btn"
-      [disabled]="activePlayers.length >= MAX_PLAYERS || getAvailablePlayers().length === 0"
-      (click)="addRandomPlayer()">
-      <mat-icon>add</mat-icon>
-      Agregar Jugador
+    <button class="add-player-btn" (click)="enablePlayersFrom2To8()">
+      <mat-icon>person_add</mat-icon>
+      Habilitar jugadores del 2 al 8
     </button>
 
-    <button class="clear-players-btn" [disabled]="activePlayers.length === 0" (click)="clearAllPlayers()">
-      <mat-icon> delete </mat-icon>
-      Limpiar Sala
+    <button class="clear-players-btn" (click)="disableAllExceptPlayer1()">
+      <mat-icon>person_remove</mat-icon>
+      Deshabilitar todos menos el jugador 1
     </button>
   </div>
 
-  <!-- Botón de inicio -->
+  <!-- 🚀 Botón de iniciar juego -->
   <div class="start-section">
-    <button class="start-button" [disabled]="!canStartGame()" (click)="startGame()">
-      <mat-icon>rocket</mat-icon>
+    <button class="start-button"
+            [disabled]="enabledPlayers.length < 2">
+      <mat-icon>rocket_launch</mat-icon>
       Iniciar Juego
     </button>
-    <div class="start-hint" *ngIf="!canStartGame()">
-      {{ getStartHint() }}
+
+    <div class="start-hint" *ngIf="enabledPlayers.length < 2">
+      🚫 Necesitas al menos 2 jugadores para iniciar.
+    </div>
+  </div>
+
+  <!-- 🧾 Mensaje cuando solo queda jugador 1 -->
+  <div class="start-section" *ngIf="enabledPlayers.length === 1 && enabledPlayers[0].id === 1">
+    <div class="start-hint">
+      ✅ Solo el jugador 1 sigue habilitado.
     </div>
   </div>
 </div>
