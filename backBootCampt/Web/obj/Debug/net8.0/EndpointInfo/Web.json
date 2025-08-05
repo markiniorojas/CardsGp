@@ -910,6 +910,14 @@
           "torque": {
             "type": "number",
             "format": "double"
+          },
+          "conAtributos": {
+            "type": "string",
+            "nullable": true
+          },
+          "sinAtributos": {
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -993,12 +1001,20 @@
             "format": "double"
           },
           "weight": {
-            "type": "number",
-            "format": "double"
+            "type": "string",
+            "nullable": true
           },
           "torque": {
             "type": "number",
             "format": "double"
+          },
+          "conAtributos": {
+            "type": "string",
+            "nullable": true
+          },
+          "sinAtributos": {
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false

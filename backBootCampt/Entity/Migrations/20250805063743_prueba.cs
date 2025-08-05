@@ -193,10 +193,14 @@ namespace Entity.Migrations
 
             migrationBuilder.InsertData(
                 table: "Players",
+                columns: new[] { "id", "IsEnabled", "userName" },
+                values: new object[] { 1, true, "camilosada12" });
+
+            migrationBuilder.InsertData(
+                table: "Players",
                 columns: new[] { "id", "userName" },
                 values: new object[,]
                 {
-                    { 1, "camilosada12" },
                     { 2, "marcos12" },
                     { 3, "palomar12" },
                     { 4, "palmar12" },

@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Entity.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20250805042607_prueba")]
+    [Migration("20250805063743_prueba")]
     partial class prueba
     {
         /// <inheritdoc />
@@ -1015,7 +1015,7 @@ namespace Entity.Migrations
                         new
                         {
                             id = 1,
-                            IsEnabled = false,
+                            IsEnabled = true,
                             isDeleted = false,
                             userName = "camilosada12"
                         },

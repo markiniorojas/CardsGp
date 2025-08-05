@@ -62,6 +62,8 @@
           <NavigationProperty Name="PlayerCard" Relationship="Model1.cardPlayerCard" FromRole="card" ToRole="PlayerCard" />
           <Property Name="weight" Type="String" Nullable="false" />
           <Property Name="torque" Type="String" Nullable="false" />
+          <Property Name="conAtributos" Type="String" Nullable="false" />
+          <Property Name="sinAtributos" Type="String" Nullable="false" />
         </EntityType>
         <EntityType Name="players">
           <Key>

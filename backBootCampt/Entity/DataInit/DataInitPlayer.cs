@@ -18,7 +18,7 @@ namespace Entity.DataInit
                     id = 1 ,
                     isDeleted = false,
                     userName = "camilosada12",
-                    IsEnabled = false,
+                    IsEnabled = true,
                 },
                  new Player
                  {

@@ -1,17 +1,17 @@
 <div class="modal-overlay" *ngIf="isVisible" (click)="closeModal()">
-      <div class="modal-content" (click)="$event.stopPropagation()">
-        <button class="close-btn" (click)="closeModal()">×</button>
-        
-        <div class="card-image-container">
-          <img [src]="cardData?.detailedImage || 'assets/cartasAtributo/CardMotoA1.0.png'" 
-               [alt]="cardData?.name || 'Motorcycle Card'" 
-               class="card-image" />
-        </div>
+  <div class="modal-content" (click)="$event.stopPropagation()">
+    <button class="close-btn" (click)="closeModal()">×</button>
 
-        <div class="modal-footer">
-          <button class="launch-btn" (click)="launchCard()">
-            LANZAR
-          </button>
-        </div>
-      </div>
+    <div class="card-image-container">
+      <img 
+        [src]="cardData?.conAtributos" 
+        [alt]="cardData?.cardName || 'Carta Detallada'" 
+        class="card-image"
+      />
+    </div>
+
+    <div class="modal-footer">
+      <button class="launch-btn" (click)="launchCard()">LANZAR</button>
+    </div>
+  </div>
 </div>

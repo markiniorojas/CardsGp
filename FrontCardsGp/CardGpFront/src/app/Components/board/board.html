@@ -1,21 +1,38 @@
 <!-- board.html -->
 <div class="board">
+
+  <!-- 🎯 Atributo a seleccionar -->
+  <div class="attribute-selector" *ngIf="isAttributeSelectionPhase && isCurrentPlayerTurn()">
+    <h3>Selecciona el atributo para esta ronda</h3>
+    <div class="attribute-controls">
+      <select id="attribute" [(ngModel)]="attributeToCompare">
+        <option value="" disabled selected>-- Seleccionar atributo --</option>
+        <option *ngFor="let attr of attributeOptions" [ngValue]="attr">{{ attr }}</option>
+      </select>
+      <button (click)="confirmAttributeSelection()" [disabled]="!attributeToCompare">
+        Confirmar
+      </button>
+    </div>
+  </div>
+
+  <!-- 🧍 Jugadores lado izquierdo -->
   <div class="players left">
     <app-player-panel 
-      *ngFor="let p of players.slice(0,3)" 
-      [name]="p.name"
+      *ngFor="let p of players.slice(0, 3); let i = index" 
+      [name]="p.name" 
       [avatar]="p.avatar"
-      [cardsCount]="p.cards"
-      [isCurrent]="p.name === 'polit01'">
+      [cardsCount]="playerHands[i]?.length || 0"
+      [isCurrent]="i === currentPlayerIndex">
     </app-player-panel>
   </div>
 
+  <!-- 🃏 Zona de batalla -->
   <div class="center-cards">
     <ng-container *ngFor="let card of battleCards; let i = index">
       <div class="battle-slot" [class.has-card]="card !== null">
         <div *ngIf="card; else emptySlot" class="battle-card-container">
-          <img [src]="card.image" [alt]="card.name" class="battle-card-img" />
-          <div class="card-name">{{ card.name }}</div>
+          <img [src]="card.sinAtributos" [alt]="card.cardName" class="battle-card-img" />
+          <div class="card-name">{{ card.cardName }}</div>
         </div>
         <ng-template #emptySlot>
           <div class="empty-slot">
@@ -26,28 +43,29 @@
     </ng-container>
   </div>
 
+  <!-- 🧍 Jugadores lado derecho -->
   <div class="players right">
     <app-player-panel 
-      *ngFor="let p of players.slice(3)" 
-      [name]="p.name"
+      *ngFor="let p of players.slice(3); let i = index" 
+      [name]="p.name" 
       [avatar]="p.avatar"
-      [cardsCount]="p.cards"
-      [isCurrent]="false">
-    </app-player-panel> 
+      [cardsCount]="playerHands[i + 3]?.length || 0"
+      [isCurrent]="(i + 3) === currentPlayerIndex">
+    </app-player-panel>
   </div>
 </div>
 
-<!-- Card Carousel at Bottom -->
+<!-- 👇 Carrusel del jugador actual -->
 <app-card-carousel 
-  [cards]="myCards"
+  [cards]="currentHand"
   [selectedIndex]="selectedCardIndex"
   (cardSelected)="selectCard($event)">
 </app-card-carousel>
 
-<!-- Card Modal -->
-<app-card-modal
-  [isVisible]="isModalVisible"
-  [cardData]="selectedModalCard"
-  (close)="closeModal()"
+<!-- 👇 Modal de carta -->
+<app-card-modal 
+  [isVisible]="isModalVisible" 
+  [cardData]="selectedModalCard" 
+  (close)="closeModal()" 
   (cardLaunched)="launchCard($event)">
 </app-card-modal>

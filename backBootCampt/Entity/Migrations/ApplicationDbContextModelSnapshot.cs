@@ -1012,7 +1012,7 @@ namespace Entity.Migrations
                         new
                         {
                             id = 1,
-                            IsEnabled = false,
+                            IsEnabled = true,
                             isDeleted = false,
                             userName = "camilosada12"
                         },

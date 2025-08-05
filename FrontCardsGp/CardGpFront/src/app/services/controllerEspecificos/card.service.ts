@@ -9,8 +9,10 @@ export class CardService {
   private baseUrl = `${ApiURL}Card`;
 
   constructor(private http: HttpClient) {}
-getCardsByUserName(userName: string): Observable<PlayerCardDto[]> {
-  return this.http.get<PlayerCardDto[]>(`${this.baseUrl}/my-cards/${userName}`);
-}
+
+  // ✅ Asignar 8 cartas a cada jugador habilitado
+  assignCardsToEnabledPlayers(): Observable<string> {
+    return this.http.post(`${this.baseUrl}/assign`, null, { responseType: 'text' });
+  }
 
 }

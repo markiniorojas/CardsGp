@@ -16,7 +16,9 @@ namespace Entity.Dto
         public decimal hP { get; set; }
         public decimal finalSpeed { get; set; }
         public decimal nOclylinder { get; set; }
-        public decimal weight { get; set; }
+        public string weight { get; set; }
         public decimal torque { get; set; }
+        public string conAtributos { get; set; }
+        public string sinAtributos { get; set; }
     }
 }
