@@ -1,0 +1,118 @@
+.background {
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+}
+
+
+ #hero{
+  min-height: 100vh;
+  position: relative;
+
+ }
+
+ video{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+ }
+
+ .capa {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #1c1c1d;
+  opacity: 0.5;
+  mix-blend-mode: overlay;
+ }
+
+.content {
+  text-align: center;
+}
+
+.logo {
+  font-size: 22vh;
+  font-family: 'Karantina';
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+}                   
+
+.subtitle {
+  color: #ccc;
+  font-size: 5vh;
+  margin-bottom: 4vh;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 var(--hover);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 var(--hover);
+  }
+}
+
+
+.offset {
+  box-shadow: 0.3em 0.3em 0 0 var(--color), inset 0.3em 0.3em 0 0 var(--color);
+  font-size: 3vh;
+  background-color: #ffffff;  
+  color: #003366;
+  border-radius: 1vh;
+}
+.offset:hover, .offset:focus {
+  box-shadow: 0 0 0 0 var(--hover), inset 6em 3.5em 0 0 var(--hover);
+}
+
+.offset {
+  --color: #ffffff;
+  --hover: #001F3F;
+}
+
+button {
+  color: var(--color);
+  transition: 0.25s;
+  font-size: 3vh;
+
+}
+button:hover, button:focus {
+  border-color: var(--hover);
+  color: #fff;
+  font-size: 4vh;
+}
+
+button {
+  background: none;
+  border: 2px solid;
+  font: inherit;
+  line-height: 1;
+  margin: 0.5em;
+  padding: 1em 2em;
+}
+
+h1 {
+  font-weight: 400;
+}
+
+code {
+  color: #e4cb58;
+  font: inherit;
+}
+.icon {
+  font-size: 8vh;
+  box-shadow: 1 1 1 1 var(--color);
+  color: #1eaeb3;
+}

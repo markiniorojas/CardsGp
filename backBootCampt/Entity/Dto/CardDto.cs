@@ -16,5 +16,7 @@ namespace Entity.Model
         public decimal nOclylinder { get; set; }
         public string weight { get; set; }
         public decimal torque { get; set; }
+        public string conAtributos { get; set; }
+        public string sinAtributos { get; set; }
     }
 }

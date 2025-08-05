@@ -1,0 +1,23 @@
+<div class="background">
+  <div class="card">
+    <h2 class="title">Número De Jugadores</h2>
+
+    <!-- Avatares -->
+    <div class="players">
+      <div class="player" *ngFor="let player of players()">
+        <img [src]="player.avatar || '/assets/avatar.png'" [alt]="player.userName">
+        <p>{{ player.userName }}</p>
+        <button class="remove" (click)="removePlayer(player.id)">✖</button>
+      </div>
+
+      <!-- Botón para agregar -->
+      <button class="add" (click)="addPlayer()">+</button>
+    </div>
+
+    <!-- Botones de acción -->
+    <div class="actions">
+      <button class="cancel" (click)="cancel()">Cancelar</button>
+      <button class="enter" (click)="saveRoom()">Ingresar</button>
+    </div>
+  </div>
+</div>

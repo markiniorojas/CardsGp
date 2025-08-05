@@ -1,16 +1,20 @@
 /* Contenedor principal */
 .lobby-container {
-  min-height: 100vh;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  height: 100vh;
+  width: 100vw;
+  background: url('/assets/fondos/fondoLobby.png') center/cover no-repeat;
   padding: 20px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: white;
+  position: fixed;
+  top: 0%;
+  left: 0%;
 }
 
 /* Header Section */
 .header-section {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 6vh;
 }
 
 .lobby-title {
@@ -27,7 +31,7 @@
 
 .lobby-subtitle {
   font-size: 1.2rem;
-  margin: 10px 0;
+  margin: 5vh 0;
   opacity: 0.9;
 }
 
@@ -42,9 +46,9 @@
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
   border-radius: 20px;
-  padding: 20px;
-  margin: 20px auto;
-  max-width: 300px;
+  padding: 1vh;
+  margin: 10px auto;
+  max-width: 25%;
   text-align: center;
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
@@ -71,7 +75,7 @@
 }
 
 .status-indicator {
-  padding: 8px 16px;
+  padding: 8px 12vh;
   border-radius: 20px;
   font-weight: bold;
   font-size: 0.9rem;
@@ -103,7 +107,7 @@
 
 /* Sección de jugadores */
 .players-section {
-  margin: 40px 0;
+  margin: 7vh 0;
 }
 
 .section-title {
@@ -117,8 +121,8 @@
 .players-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 20px;
-  max-width: 800px;
+  gap: 4vh;
+  max-width: 100vh;
   margin: 0 auto;
 }
 
@@ -257,15 +261,15 @@
 }
 
 .start-button {
-  padding: 15px 40px;
+  padding: 1% 3%;
   font-size: 1.3rem;
   font-weight: bold;
   border: none;
   border-radius: 30px;
   cursor: pointer;
   transition: all 0.3s ease;
-  background: linear-gradient(45deg, #feca57, #ff9ff3);
-  color: #333;
+  background: linear-gradient(45deg, #008CFF, #008CFF);
+  color: #ffffff;
   display: inline-flex;
   align-items: center;
   gap: 10px;
@@ -297,23 +301,8 @@
   font-style: italic;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .lobby-title {
-    font-size: 2rem;
-  }
-  
-  .players-grid {
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    gap: 15px;
-  }
-  
-  .action-buttons {
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .add-player-btn, .clear-players-btn {
-    min-width: 250px;
-  }
+.userPlayers {
+  color: #ee5a52;
+  padding-right: 2%;
+  scale: 2;
 }

@@ -20,3 +20,4 @@ public class CardController : ControllerBase
         return Ok("Cartas asignadas a jugadores habilitados.");
     }
 }
+ 

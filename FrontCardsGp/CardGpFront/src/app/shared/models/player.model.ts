@@ -1,6 +1,6 @@
 export interface Player {
   id: number;
-  name: string;
+  userName: string;
   avatarUrl?: string;
   isReady?: boolean;
 }

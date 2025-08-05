@@ -1,0 +1,87 @@
+.background {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('/assets/FondoSalida.png') center/cover no-repeat;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 1.5rem;
+  padding: 2rem;
+  text-align: center;
+  width: 450px;
+}
+
+.title {
+  color: white;
+  margin-bottom: 1.5rem;
+}
+
+.players {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.player {
+  position: relative;
+}
+
+.player img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.remove {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background: red;
+  border: none;
+  border-radius: 50%;
+  color: white;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.add {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px dashed white;
+  background: transparent;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-around;
+}
+
+.cancel {
+  background-color: #FF8400;
+  color: white;
+  padding: 0.6rem 1.5rem;
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+.enter {
+  background-color: #0094FF;
+  color: white;
+  padding: 0.6rem 1.5rem;
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+}
