@@ -9,13 +9,17 @@
     </app-player-panel>
   </div>
 
-  <div class="center-cards">
-      <div class="detailed-card-container" *ngIf="selectedCardIndex !== null">
+ <div class="center-cards">
+  <ng-container *ngFor="let player of players; let i = index">
+    <div *ngIf="i === 0 && selectedCardIndex !== null; else empty" class="detailed-card-container">
       <img [src]="myCards[selectedCardIndex].detailedImage" alt="Carta Detallada" class="detailed-card-img" />
     </div>
-    <!-- Slots restantes -->
-    <div class="empty-slot" *ngFor="let _ of [1,2,3]"></div>
-  </div>
+    <ng-template #empty>
+      <div class="empty-slot"></div>
+    </ng-template>
+  </ng-container>
+</div>
+
 
   <div class="players right">
     <app-player-panel 
@@ -34,3 +38,4 @@
   [selectedIndex]="selectedCardIndex"
   (cardSelected)="selectCard($event)">
 </app-card-carousel>
+

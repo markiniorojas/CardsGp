@@ -23,11 +23,9 @@
     </h3>
 
     <div class="players-grid">
-      <div class="player-card"
-           *ngFor="let player of enabledPlayers"
-           [class.locked]="player.id === 1"
-           (click)="onPlayerClick(player)"
-           [title]="player.id === 1 ? 'Este jugador no se puede deshabilitar' : 'Haz clic para deshabilitar'">
+      <div class="player-card" *ngFor="let player of enabledPlayers" [class.locked]="player.id === 1"
+        (click)="onPlayerClick(player)"
+        [title]="player.id === 1 ? 'Este jugador no se puede deshabilitar' : 'Haz clic para deshabilitar'">
         <div class="player-avatar">
           <span class="player-icon">👤</span>
         </div>
@@ -66,11 +64,11 @@
 
   <!-- 🚀 Botón de iniciar juego -->
   <div class="start-section">
-    <button class="start-button"
-            [disabled]="enabledPlayers.length < 2">
+    <button class="start-button" [disabled]="enabledPlayers.length < 2" (click)="startGame()">
       <mat-icon>rocket_launch</mat-icon>
       Iniciar Juego
     </button>
+
 
     <div class="start-hint" *ngIf="enabledPlayers.length < 2">
       🚫 Necesitas al menos 2 jugadores para iniciar.

@@ -969,8 +969,8 @@
             "type": "boolean"
           },
           "userName": {
-            "type": "integer",
-            "format": "int32"
+            "type": "string",
+            "nullable": true
           },
           "cardName": {
             "type": "string",
