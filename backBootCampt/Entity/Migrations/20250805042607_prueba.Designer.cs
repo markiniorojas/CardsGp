@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Entity.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20250803235259_initial")]
-    partial class initial
+    [Migration("20250805042607_prueba")]
+    partial class prueba
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -37,6 +37,11 @@ namespace Entity.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("conAtributos")
+                        .IsRequired()
+                        .HasMaxLength(250)
+                        .HasColumnType("nvarchar(250)");
+
                     b.Property<decimal>("cylinderCapacity")
                         .HasPrecision(10, 2)
                         .HasColumnType("decimal(10,2)");
@@ -58,6 +63,11 @@ namespace Entity.Migrations
                         .HasPrecision(10, 2)
                         .HasColumnType("decimal(10,2)");
 
+                    b.Property<string>("sinAtributos")
+                        .IsRequired()
+                        .HasMaxLength(250)
+                        .HasColumnType("nvarchar(250)");
+
                     b.Property<decimal>("torque")
                         .HasPrecision(10, 2)
                         .HasColumnType("decimal(10,2)");
@@ -76,11 +86,13 @@ namespace Entity.Migrations
                         {
                             id = 1,
                             cardName = "Kawasaki Z900",
+                            conAtributos = "CardMotoA1.0.png",
                             cylinderCapacity = 948m,
                             finalSpeed = 246m,
                             hP = 123.6m,
                             isDeleted = false,
                             nOclylinder = 4m,
+                            sinAtributos = "cartaMoto1.0.png",
                             torque = 98.6m,
                             weight = "190 kg"
                         },
@@ -88,11 +100,13 @@ namespace Entity.Migrations
                         {
                             id = 2,
                             cardName = "Aprillia RSV4",
+                            conAtributos = "CardMotoA2.0.png",
                             cylinderCapacity = 1099m,
                             finalSpeed = 285m,
                             hP = 137.2m,
                             isDeleted = false,
                             nOclylinder = 4m,
+                            sinAtributos = "cartaMoto2.0.png",
                             torque = 100.1m,
                             weight = "202 kg"
                         },
@@ -100,11 +114,13 @@ namespace Entity.Migrations
                         {
                             id = 3,
                             cardName = "Yamaha MT-09",
+                            conAtributos = "CardMotoA3.0.png",
                             cylinderCapacity = 847m,
                             finalSpeed = 279m,
                             hP = 121.2m,
                             isDeleted = false,
                             nOclylinder = 4m,
+                            sinAtributos = "cartaMoto3.0.png",
                             torque = 93.2m,
                             weight = "182 kg"
                         },
@@ -112,11 +128,13 @@ namespace Entity.Migrations
                         {
                             id = 4,
                             cardName = "Kawasaki ZH2",
+                            conAtributos = "CardMotoA4.0.png",
                             cylinderCapacity = 997m,
                             finalSpeed = 290m,
                             hP = 127.2m,
                             isDeleted = false,
                             nOclylinder = 4m,
+                            sinAtributos = "cartaMoto4.0.png",
                             torque = 108.2m,
                             weight = "192 kg"
                         },
@@ -124,11 +142,13 @@ namespace Entity.Migrations
                         {
                             id = 5,
                             cardName = "Yamaha MT-10 SP",
+                            conAtributos = "CardMotoA5.0.png",
                             cylinderCapacity = 996m,
                             finalSpeed = 285.1m,
                             hP = 123.7m,
                             isDeleted = false,
                             nOclylinder = 4m,
+                            sinAtributos = "cartaMoto5.0.png",
                             torque = 102.4m,
                             weight = "183 kg"
                         },
@@ -136,11 +156,13 @@ namespace Entity.Migrations
                         {
                             id = 6,
                             cardName = "CF Motos SR R 675",
+                            conAtributos = "CardMotoA6.0.png",
                             cylinderCapacity = 675m,
                             finalSpeed = 238m,
                             hP = 94.0m,
                             isDeleted = false,
                             nOclylinder = 4m,
+                            sinAtributos = "cartaMoto6.0.png",
                             torque = 70m,
                             weight = "184 kg"
                         },
@@ -148,11 +170,13 @@ namespace Entity.Migrations
                         {
                             id = 7,
                             cardName = "Honda CBR 600",
+                            conAtributos = "CardMotoA7.0.png",
                             cylinderCapacity = 599m,
                             finalSpeed = 256m,
                             hP = 120.5m,
                             isDeleted = false,
                             nOclylinder = 4m,
+                            sinAtributos = "cartaMoto7.0.png",
                             torque = 63.4m,
                             weight = "186 kg"
                         },
@@ -160,11 +184,13 @@ namespace Entity.Migrations
                         {
                             id = 8,
                             cardName = "Honda CBR 600 RR",
+                            conAtributos = "CardMotoA8.0.png",
                             cylinderCapacity = 610m,
                             finalSpeed = 268.2m,
                             hP = 121.3m,
                             isDeleted = false,
                             nOclylinder = 4m,
+                            sinAtributos = "cartaMoto8.0.png",
                             torque = 74.1m,
                             weight = "185 kg"
                         },
@@ -172,11 +198,13 @@ namespace Entity.Migrations
                         {
                             id = 9,
                             cardName = "KTM Duke 1390",
+                            conAtributos = "CardMotoA9.0.png",
                             cylinderCapacity = 1390m,
                             finalSpeed = 290.3m,
                             hP = 125.2m,
                             isDeleted = false,
                             nOclylinder = 4m,
+                            sinAtributos = "cartaMoto9.0.png",
                             torque = 116.3m,
                             weight = "209 kg"
                         },
@@ -184,11 +212,13 @@ namespace Entity.Migrations
                         {
                             id = 10,
                             cardName = "Ducati Panigale V4",
+                            conAtributos = "CardMotoA10.0.png",
                             cylinderCapacity = 1103m,
                             finalSpeed = 299.2m,
                             hP = 123.5m,
                             isDeleted = false,
                             nOclylinder = 4m,
+                            sinAtributos = "cartaMoto10.0.png",
                             torque = 124.3m,
                             weight = "198 kg"
                         },
@@ -196,11 +226,13 @@ namespace Entity.Migrations
                         {
                             id = 11,
                             cardName = "Kawasaki Z1000",
+                            conAtributos = "CardMotoA11.0.png",
                             cylinderCapacity = 1043m,
                             finalSpeed = 250m,
                             hP = 126.7m,
                             isDeleted = false,
                             nOclylinder = 4m,
+                            sinAtributos = "cartaMoto11.0.png",
                             torque = 112m,
                             weight = "208 kg"
                         },
@@ -208,11 +240,13 @@ namespace Entity.Migrations
                         {
                             id = 12,
                             cardName = "Ducati Diavel",
+                            conAtributos = "CardMotoA12.0.png",
                             cylinderCapacity = 1158m,
                             finalSpeed = 275m,
                             hP = 124.6m,
                             isDeleted = false,
                             nOclylinder = 4m,
+                            sinAtributos = "cartaMoto12.0.png",
                             torque = 111.4m,
                             weight = "214 kg"
                         },
@@ -220,11 +254,13 @@ namespace Entity.Migrations
                         {
                             id = 13,
                             cardName = "Yamaha R6",
+                            conAtributos = "CardMotoA13.0.png",
                             cylinderCapacity = 601m,
                             finalSpeed = 269m,
                             hP = 117m,
                             isDeleted = false,
                             nOclylinder = 4m,
+                            sinAtributos = "cartaMoto13.0.png",
                             torque = 71m,
                             weight = "184 kg"
                         },
@@ -232,11 +268,13 @@ namespace Entity.Migrations
                         {
                             id = 14,
                             cardName = "CF Motos SR 450",
+                            conAtributos = "CardMotoA14.0.png",
                             cylinderCapacity = 450m,
                             finalSpeed = 193m,
                             hP = 47m,
                             isDeleted = false,
                             nOclylinder = 4m,
+                            sinAtributos = "cartaMoto14.0.png",
                             torque = 59m,
                             weight = "168 kg"
                         },
@@ -244,11 +282,13 @@ namespace Entity.Migrations
                         {
                             id = 15,
                             cardName = "BMW S1000R",
+                            conAtributos = "CardMotoA15.0.png",
                             cylinderCapacity = 1004m,
                             finalSpeed = 259m,
                             hP = 127.9m,
                             isDeleted = false,
                             nOclylinder = 4m,
+                            sinAtributos = "cartaMoto15.0.png",
                             torque = 103.1m,
                             weight = "201 kg"
                         },
@@ -256,11 +296,13 @@ namespace Entity.Migrations
                         {
                             id = 16,
                             cardName = "Honda CB 1000",
+                            conAtributos = "CardMotoA16.0.png",
                             cylinderCapacity = 992m,
                             finalSpeed = 234m,
                             hP = 123.8m,
                             isDeleted = false,
                             nOclylinder = 4m,
+                            sinAtributos = "cartaMoto16.0.png",
                             torque = 104.5m,
                             weight = "202 kg"
                         },
@@ -268,11 +310,13 @@ namespace Entity.Migrations
                         {
                             id = 17,
                             cardName = "Kawasaki ZX 6R",
+                            conAtributos = "CardMotoA17.0.png",
                             cylinderCapacity = 636m,
                             finalSpeed = 265m,
                             hP = 120.1m,
                             isDeleted = false,
                             nOclylinder = 4m,
+                            sinAtributos = "cartaMoto17.0.png",
                             torque = 78m,
                             weight = "198 kg"
                         },
@@ -280,11 +324,13 @@ namespace Entity.Migrations
                         {
                             id = 18,
                             cardName = "Kawasaki ZX 10 RR",
+                            conAtributos = "CardMotoA18.0.png",
                             cylinderCapacity = 1000m,
                             finalSpeed = 300m,
                             hP = 123.9m,
                             isDeleted = false,
                             nOclylinder = 4m,
+                            sinAtributos = "cartaMoto18.0.png",
                             torque = 114.3m,
                             weight = "197 kg"
                         },
@@ -292,11 +338,13 @@ namespace Entity.Migrations
                         {
                             id = 19,
                             cardName = "Aprillia RS 660",
+                            conAtributos = "CardMotoA19.0.png",
                             cylinderCapacity = 659m,
                             finalSpeed = 230m,
                             hP = 110m,
                             isDeleted = false,
                             nOclylinder = 4m,
+                            sinAtributos = "cartaMoto19.0.png",
                             torque = 77.4m,
                             weight = "179 kg"
                         },
@@ -304,11 +352,13 @@ namespace Entity.Migrations
                         {
                             id = 20,
                             cardName = "BMW GS1200",
+                            conAtributos = "CardMotoA20.0.png",
                             cylinderCapacity = 1170m,
                             finalSpeed = 260.4m,
                             hP = 124.3m,
                             isDeleted = false,
                             nOclylinder = 4m,
+                            sinAtributos = "cartaMoto20.0.png",
                             torque = 109.5m,
                             weight = "214 kg"
                         },
@@ -316,11 +366,13 @@ namespace Entity.Migrations
                         {
                             id = 21,
                             cardName = "Yamaha Tracer 900",
+                            conAtributos = "CardMotoA21.0.png",
                             cylinderCapacity = 890m,
                             finalSpeed = 238.1m,
                             hP = 119m,
                             isDeleted = false,
                             nOclylinder = 4m,
+                            sinAtributos = "cartaMoto21.0.png",
                             torque = 103m,
                             weight = "219 kg"
                         },
@@ -328,11 +380,13 @@ namespace Entity.Migrations
                         {
                             id = 22,
                             cardName = "Honda CBR 1000 RR",
+                            conAtributos = "CardMotoA22.0.png",
                             cylinderCapacity = 998m,
                             finalSpeed = 298.9m,
                             hP = 125.7m,
                             isDeleted = false,
                             nOclylinder = 4m,
+                            sinAtributos = "cartaMoto22.0.png",
                             torque = 113.9m,
                             weight = "206 kg"
                         },
@@ -340,11 +394,13 @@ namespace Entity.Migrations
                         {
                             id = 23,
                             cardName = "Suzuki GSX-R750",
+                            conAtributos = "CardMotoA23.0.png",
                             cylinderCapacity = 749m,
                             finalSpeed = 284.3m,
                             hP = 118m,
                             isDeleted = false,
                             nOclylinder = 4m,
+                            sinAtributos = "cartaMoto23.0.png",
                             torque = 126.3m,
                             weight = "173 kg"
                         },
@@ -352,11 +408,13 @@ namespace Entity.Migrations
                         {
                             id = 24,
                             cardName = "Yamaha R1M",
+                            conAtributos = "CardMotoA24.0.png",
                             cylinderCapacity = 995m,
                             finalSpeed = 298.5m,
                             hP = 127.6m,
                             isDeleted = false,
                             nOclylinder = 4m,
+                            sinAtributos = "cartaMoto24.0.png",
                             torque = 115.7m,
                             weight = "207 kg"
                         },
@@ -364,11 +422,13 @@ namespace Entity.Migrations
                         {
                             id = 25,
                             cardName = "Suzuki GSX-R1000R",
+                            conAtributos = "CardMotoA25.0.png",
                             cylinderCapacity = 1001m,
                             finalSpeed = 297.9m,
                             hP = 127.7m,
                             isDeleted = false,
                             nOclylinder = 4m,
+                            sinAtributos = "cartaMoto25.0.png",
                             torque = 112.4m,
                             weight = "197 kg"
                         },
@@ -376,11 +436,13 @@ namespace Entity.Migrations
                         {
                             id = 26,
                             cardName = "Ducati Streetfighter V4",
+                            conAtributos = "CardMotoA26.0.png",
                             cylinderCapacity = 1103m,
                             finalSpeed = 296.6m,
                             hP = 129.4m,
                             isDeleted = false,
                             nOclylinder = 4m,
+                            sinAtributos = "cartaMoto26.0.png",
                             torque = 113.6m,
                             weight = "196.4 kg"
                         },
@@ -388,11 +450,13 @@ namespace Entity.Migrations
                         {
                             id = 27,
                             cardName = "Suzuki GSX S 1000",
+                            conAtributos = "CardMotoA27.0.png",
                             cylinderCapacity = 1002m,
                             finalSpeed = 287.8m,
                             hP = 122.6m,
                             isDeleted = false,
                             nOclylinder = 4m,
+                            sinAtributos = "cartaMoto27.0.png",
                             torque = 106.1m,
                             weight = "203.5 kg"
                         },
@@ -400,11 +464,13 @@ namespace Entity.Migrations
                         {
                             id = 28,
                             cardName = "Suzuki Hayabusa",
+                            conAtributos = "CardMotoA28.0.png",
                             cylinderCapacity = 1340m,
                             finalSpeed = 301m,
                             hP = 125.4m,
                             isDeleted = false,
                             nOclylinder = 4m,
+                            sinAtributos = "cartaMoto28.0.png",
                             torque = 104.4m,
                             weight = "219.4 kg"
                         },
@@ -412,11 +478,13 @@ namespace Entity.Migrations
                         {
                             id = 29,
                             cardName = "KTM RC 8C",
+                            conAtributos = "CardMotoA29.0.png",
                             cylinderCapacity = 889m,
                             finalSpeed = 277.3m,
                             hP = 125.3m,
                             isDeleted = false,
                             nOclylinder = 4m,
+                            sinAtributos = "cartaMoto29.0.png",
                             torque = 102m,
                             weight = "197.6 kg"
                         },
@@ -424,11 +492,13 @@ namespace Entity.Migrations
                         {
                             id = 30,
                             cardName = "KTM Duke 390",
+                            conAtributos = "CardMotoA30.0.png",
                             cylinderCapacity = 399m,
                             finalSpeed = 223m,
                             hP = 46m,
                             isDeleted = false,
                             nOclylinder = 4m,
+                            sinAtributos = "cartaMoto30.0.png",
                             torque = 37m,
                             weight = "169 kg"
                         },
@@ -436,11 +506,13 @@ namespace Entity.Migrations
                         {
                             id = 31,
                             cardName = "BMW S1000 RR",
+                            conAtributos = "CardMotoA31.0.png",
                             cylinderCapacity = 1004m,
                             finalSpeed = 299.9m,
                             hP = 129.3m,
                             isDeleted = false,
                             nOclylinder = 4m,
+                            sinAtributos = "cartaMoto31.0.png",
                             torque = 114.8m,
                             weight = "199.3 kg"
                         },
@@ -448,11 +520,13 @@ namespace Entity.Migrations
                         {
                             id = 32,
                             cardName = "Kawasaki H2R",
+                            conAtributos = "CardMotoA32.0.png",
                             cylinderCapacity = 1007m,
                             finalSpeed = 300.1m,
                             hP = 139m,
                             isDeleted = false,
                             nOclylinder = 4m,
+                            sinAtributos = "cartaMoto32.0.png",
                             torque = 130m,
                             weight = "198.8 kg"
                         },
@@ -460,11 +534,13 @@ namespace Entity.Migrations
                         {
                             id = 33,
                             cardName = "Yamaha R7",
+                            conAtributos = "CardMotoA33.0.png",
                             cylinderCapacity = 689m,
                             finalSpeed = 179.8m,
                             hP = 118.7m,
                             isDeleted = false,
                             nOclylinder = 4m,
+                            sinAtributos = "cartaMoto33.0.png",
                             torque = 118.9m,
                             weight = "187.5 kg"
                         },
@@ -472,11 +548,13 @@ namespace Entity.Migrations
                         {
                             id = 34,
                             cardName = "Suzuki Katana 1000",
+                            conAtributos = "CardMotoA34.0.png",
                             cylinderCapacity = 1008m,
                             finalSpeed = 284.4m,
                             hP = 126.4m,
                             isDeleted = false,
                             nOclylinder = 4m,
+                            sinAtributos = "cartaMoto34.0.png",
                             torque = 116.4m,
                             weight = "193.1 kg"
                         },
@@ -484,11 +562,13 @@ namespace Entity.Migrations
                         {
                             id = 35,
                             cardName = "Ducati Super Sport 950S",
+                            conAtributos = "CardMotoA35.0.png",
                             cylinderCapacity = 937m,
                             finalSpeed = 296.7m,
                             hP = 124.0m,
                             isDeleted = false,
                             nOclylinder = 4m,
+                            sinAtributos = "cartaMoto35.0.png",
                             torque = 117.2m,
                             weight = "187.1 kg"
                         },
@@ -496,11 +576,13 @@ namespace Entity.Migrations
                         {
                             id = 36,
                             cardName = "Ducati Monster 937",
+                            conAtributos = "CardMotoA36.0.png",
                             cylinderCapacity = 937m,
                             finalSpeed = 282.2m,
                             hP = 127.3m,
                             isDeleted = false,
                             nOclylinder = 4m,
+                            sinAtributos = "cartaMoto36.0.png",
                             torque = 116.5m,
                             weight = "195.1 kg"
                         },
@@ -508,11 +590,13 @@ namespace Entity.Migrations
                         {
                             id = 37,
                             cardName = "Ducati 848 EVO",
+                            conAtributos = "CardMotoA37.0.png",
                             cylinderCapacity = 848m,
                             finalSpeed = 276.6m,
                             hP = 123.3m,
                             isDeleted = false,
                             nOclylinder = 4m,
+                            sinAtributos = "cartaMoto37.0.png",
                             torque = 119.6m,
                             weight = "202.1 kg"
                         },
@@ -520,11 +604,13 @@ namespace Entity.Migrations
                         {
                             id = 38,
                             cardName = "Triumph Daytona Moto2 765",
+                            conAtributos = "CardMotoA38.0.png",
                             cylinderCapacity = 765m,
                             finalSpeed = 288.2m,
                             hP = 122.2m,
                             isDeleted = false,
                             nOclylinder = 4m,
+                            sinAtributos = "cartaMoto38.0.png",
                             torque = 120.1m,
                             weight = "203.5 kg"
                         },
@@ -532,11 +618,13 @@ namespace Entity.Migrations
                         {
                             id = 39,
                             cardName = "Triumph Speed Triple 1200 RR",
+                            conAtributos = "CardMotoA39.0.png",
                             cylinderCapacity = 1190m,
                             finalSpeed = 280.2m,
                             hP = 126.5m,
                             isDeleted = false,
                             nOclylinder = 4m,
+                            sinAtributos = "cartaMoto39.0.png",
                             torque = 126.4m,
                             weight = "210.4 kg"
                         },
@@ -544,11 +632,13 @@ namespace Entity.Migrations
                         {
                             id = 40,
                             cardName = "MV Agusta F3 800",
+                            conAtributos = "CardMotoA40.0.png",
                             cylinderCapacity = 799m,
                             finalSpeed = 267.8m,
                             hP = 122.1m,
                             isDeleted = false,
                             nOclylinder = 4m,
+                            sinAtributos = "cartaMoto40.0.png",
                             torque = 122.3m,
                             weight = "197.1 kg"
                         },
@@ -556,11 +646,13 @@ namespace Entity.Migrations
                         {
                             id = 41,
                             cardName = "MV Agusta Brutale 1000 RR",
+                            conAtributos = "CardMotoA41.0.png",
                             cylinderCapacity = 1010m,
                             finalSpeed = 294.8m,
                             hP = 128.6m,
                             isDeleted = false,
                             nOclylinder = 4m,
+                            sinAtributos = "cartaMoto41.0.png",
                             torque = 126.1m,
                             weight = "203.5 kg"
                         },
@@ -568,11 +660,13 @@ namespace Entity.Migrations
                         {
                             id = 42,
                             cardName = "BMW R nineT Race",
+                            conAtributos = "CardMotoA42.0.png",
                             cylinderCapacity = 1000m,
                             finalSpeed = 291.7m,
                             hP = 128.4m,
                             isDeleted = false,
                             nOclylinder = 4m,
+                            sinAtributos = "cartaMoto42.0.png",
                             torque = 121.1m,
                             weight = "192.9 kg"
                         },
@@ -580,11 +674,13 @@ namespace Entity.Migrations
                         {
                             id = 43,
                             cardName = "CF Moto 800NK Sport",
+                            conAtributos = "CardMotoA43.0.png",
                             cylinderCapacity = 789m,
                             finalSpeed = 277.2m,
                             hP = 124.1m,
                             isDeleted = false,
                             nOclylinder = 4m,
+                            sinAtributos = "cartaMoto43.0.png",
                             torque = 112.1m,
                             weight = "187.4 kg"
                         },
@@ -592,11 +688,13 @@ namespace Entity.Migrations
                         {
                             id = 44,
                             cardName = "MV Agusta Superveloce 800",
+                            conAtributos = "CardMoto44.0.png",
                             cylinderCapacity = 792m,
                             finalSpeed = 280.3m,
                             hP = 121.7m,
                             isDeleted = false,
                             nOclylinder = 4m,
+                            sinAtributos = "cartaMoto44.0.png",
                             torque = 102.9m,
                             weight = "188.2 kg"
                         },
@@ -604,11 +702,13 @@ namespace Entity.Migrations
                         {
                             id = 45,
                             cardName = "MV Agusta Turismo Veloce 800 Lusso SCS",
+                            conAtributos = "CardMotoA45.0.png",
                             cylinderCapacity = 788m,
                             finalSpeed = 284.5m,
                             hP = 125.5m,
                             isDeleted = false,
                             nOclylinder = 4m,
+                            sinAtributos = "cartaMoto45.0.png",
                             torque = 101.2m,
                             weight = "192.1 kg"
                         },
@@ -616,11 +716,13 @@ namespace Entity.Migrations
                         {
                             id = 46,
                             cardName = "Bimota Tesi H2",
+                            conAtributos = "CardMotoA46.0.png",
                             cylinderCapacity = 1014m,
                             finalSpeed = 292.1m,
                             hP = 129.6m,
                             isDeleted = false,
                             nOclylinder = 4m,
+                            sinAtributos = "cartaMoto46.0.png",
                             torque = 112.2m,
                             weight = "188.8 kg"
                         },
@@ -628,11 +730,13 @@ namespace Entity.Migrations
                         {
                             id = 47,
                             cardName = "Bimota KB4",
+                            conAtributos = "CardMotoA47.0.png",
                             cylinderCapacity = 1017m,
                             finalSpeed = 287.9m,
                             hP = 126.9m,
                             isDeleted = false,
                             nOclylinder = 4m,
+                            sinAtributos = "cartaMoto47.0.png",
                             torque = 112.9m,
                             weight = "190.2 kg"
                         },
@@ -640,11 +744,13 @@ namespace Entity.Migrations
                         {
                             id = 48,
                             cardName = "Kawasaki Ninja ZX-12R",
+                            conAtributos = "CardMotoA48.0.png",
                             cylinderCapacity = 1197m,
                             finalSpeed = 288.6m,
                             hP = 127.1m,
                             isDeleted = false,
                             nOclylinder = 4m,
+                            sinAtributos = "cartaMoto48.0.png",
                             torque = 119.3m,
                             weight = "204.5 kg"
                         },
@@ -652,11 +758,13 @@ namespace Entity.Migrations
                         {
                             id = 49,
                             cardName = "Kawasaki Ninja ZX-14R",
+                            conAtributos = "CardMotoA49.0.png",
                             cylinderCapacity = 1390m,
                             finalSpeed = 298.8m,
                             hP = 130.2m,
                             isDeleted = false,
                             nOclylinder = 4m,
+                            sinAtributos = "cartaMoto49.0.png",
                             torque = 128.2m,
                             weight = "209.4 kg"
                         },
@@ -664,11 +772,13 @@ namespace Entity.Migrations
                         {
                             id = 50,
                             cardName = "Yamaha FJR 1300",
+                            conAtributos = "CardMotoA50.0.png",
                             cylinderCapacity = 1270m,
                             finalSpeed = 287.2m,
                             hP = 127.4m,
                             isDeleted = false,
                             nOclylinder = 4m,
+                            sinAtributos = "cartaMoto50.0.png",
                             torque = 122.4m,
                             weight = "201.9 kg"
                         },
@@ -676,11 +786,13 @@ namespace Entity.Migrations
                         {
                             id = 51,
                             cardName = "Honda VFR800 Interceptor",
+                            conAtributos = "CardMotoA51.0.png",
                             cylinderCapacity = 869m,
                             finalSpeed = 282.8m,
                             hP = 118.1m,
                             isDeleted = false,
                             nOclylinder = 4m,
+                            sinAtributos = "cartaMoto51.0.png",
                             torque = 122.2m,
                             weight = "173.5 kg"
                         },
@@ -688,11 +800,13 @@ namespace Entity.Migrations
                         {
                             id = 52,
                             cardName = "Honda VFR 1200F",
+                            conAtributos = "CardMotoA52.0.png",
                             cylinderCapacity = 1193m,
                             finalSpeed = 293.2m,
                             hP = 125.9m,
                             isDeleted = false,
                             nOclylinder = 4m,
+                            sinAtributos = "cartaMoto52.0.png",
                             torque = 131.3m,
                             weight = "202.8 kg"
                         },
@@ -700,11 +814,13 @@ namespace Entity.Migrations
                         {
                             id = 53,
                             cardName = "Honda CBR1100XX Blackbird",
+                            conAtributos = "CardMotoA53.0.png",
                             cylinderCapacity = 1100m,
                             finalSpeed = 297.2m,
                             hP = 124.8m,
                             isDeleted = false,
                             nOclylinder = 4m,
+                            sinAtributos = "cartaMoto53.0.png",
                             torque = 114.4m,
                             weight = "191.7 kg"
                         },
@@ -712,11 +828,13 @@ namespace Entity.Migrations
                         {
                             id = 54,
                             cardName = "Suzuki TL1000R",
+                            conAtributos = "CardMotoA54.0.png",
                             cylinderCapacity = 1009m,
                             finalSpeed = 273.8m,
                             hP = 132.8m,
                             isDeleted = false,
                             nOclylinder = 4m,
+                            sinAtributos = "cartaMoto54.0.png",
                             torque = 111.7m,
                             weight = "213.2 kg"
                         },
@@ -724,11 +842,13 @@ namespace Entity.Migrations
                         {
                             id = 55,
                             cardName = "Triumph Daytona955i",
+                            conAtributos = "CardMotoA55.0.png",
                             cylinderCapacity = 954m,
                             finalSpeed = 301.6m,
                             hP = 135.8m,
                             isDeleted = false,
                             nOclylinder = 4m,
+                            sinAtributos = "cartaMoto55.0.png",
                             torque = 114.5m,
                             weight = "219.4 kg"
                         },
@@ -736,11 +856,13 @@ namespace Entity.Migrations
                         {
                             id = 56,
                             cardName = "Beneli TNT 1130R",
+                            conAtributos = "CardMotoA56.0.png",
                             cylinderCapacity = 1130m,
                             finalSpeed = 290.7m,
                             hP = 135.3m,
                             isDeleted = false,
                             nOclylinder = 4m,
+                            sinAtributos = "cartaMoto56.0.png",
                             torque = 110.9m,
                             weight = "198.3 kg"
                         });
