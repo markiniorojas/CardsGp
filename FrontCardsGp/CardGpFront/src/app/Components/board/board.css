@@ -1,42 +1,156 @@
+/* board.css */
 .board {
   display: flex;
   justify-content: space-between;
   padding: 10px;
+  min-height: 60vh;
 }
 
 .players.left, .players.right {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  width: 200px;
 }
 
 .center-cards {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 15px;
   flex-grow: 1;
+  padding: 20px;
+  background: linear-gradient(135deg, rgba(0,0,0,0.1) 0%, rgba(255,255,255,0.05) 100%);
+  border-radius: 15px;
+  margin: 0 20px;
+}
+
+.battle-slot {
+  position: relative;
+  transition: all 0.3s ease;
 }
 
 .empty-slot {
-  width: 150px;
-  height: 220px;
-  background-color: rgba(255,255,255,0.2);
-  border: 2px dashed #aaa;
-  border-radius: 10px;
-}
-
-.detailed-card-container {
-  width: 200px;
-  height: auto;
+  width: 120px;
+  height: 170px;
+  background: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.05) 100%);
+  border: 2px dashed rgba(255,255,255,0.3);
+  border-radius: 12px;
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(5px);
 }
 
-.detailed-card-img {
+.empty-slot:hover {
+  border-color: rgba(255,255,255,0.5);
+  background: linear-gradient(135deg, rgba(255,255,255,0.15) 0%, rgba(255,255,255,0.08) 100%);
+}
+
+.slot-number {
+  color: rgba(255,255,255,0.6);
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.battle-card-container {
+  width: 120px;
+  height: 170px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  border-radius: 12px;
+  padding: 8px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+  transition: all 0.3s ease;
+  border: 2px solid #3498db;
+}
+
+.battle-card-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 35px rgba(0,0,0,0.4);
+}
+
+.battle-card-img {
   width: 100%;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-} 
+  height: 130px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.card-name {
+  margin-top: 5px;
+  font-size: 11px;
+  font-weight: bold;
+  color: #2c3e50;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.has-card {
+  animation: cardPlaced 0.5s ease-out;
+}
+
+@keyframes cardPlaced {
+  from {
+    opacity: 0;
+    transform: scale(0.8) translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .center-cards {
+    gap: 10px;
+  }
+  
+  .empty-slot,
+  .battle-card-container {
+    width: 100px;
+    height: 140px;
+  }
+  
+  .battle-card-img {
+    height: 110px;
+  }
+}
+
+@media (max-width: 768px) {
+  .board {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .players.left, .players.right {
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .center-cards {
+    margin: 0;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  
+  .empty-slot,
+  .battle-card-container {
+    width: 80px;
+    height: 110px;
+  }
+  
+  .battle-card-img {
+    height: 85px;
+  }
+  
+  .card-name {
+    font-size: 9px;
+  }
+}

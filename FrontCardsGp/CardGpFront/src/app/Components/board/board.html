@@ -1,3 +1,4 @@
+<!-- board.html -->
 <div class="board">
   <div class="players left">
     <app-player-panel 
@@ -9,17 +10,21 @@
     </app-player-panel>
   </div>
 
- <div class="center-cards">
-  <ng-container *ngFor="let player of players; let i = index">
-    <div *ngIf="i === 0 && selectedCardIndex !== null; else empty" class="detailed-card-container">
-      <img [src]="myCards[selectedCardIndex].detailedImage" alt="Carta Detallada" class="detailed-card-img" />
-    </div>
-    <ng-template #empty>
-      <div class="empty-slot"></div>
-    </ng-template>
-  </ng-container>
-</div>
-
+  <div class="center-cards">
+    <ng-container *ngFor="let card of battleCards; let i = index">
+      <div class="battle-slot" [class.has-card]="card !== null">
+        <div *ngIf="card; else emptySlot" class="battle-card-container">
+          <img [src]="card.image" [alt]="card.name" class="battle-card-img" />
+          <div class="card-name">{{ card.name }}</div>
+        </div>
+        <ng-template #emptySlot>
+          <div class="empty-slot">
+            <span class="slot-number">{{ i + 1 }}</span>
+          </div>
+        </ng-template>
+      </div>
+    </ng-container>
+  </div>
 
   <div class="players right">
     <app-player-panel 
@@ -39,3 +44,10 @@
   (cardSelected)="selectCard($event)">
 </app-card-carousel>
 
+<!-- Card Modal -->
+<app-card-modal
+  [isVisible]="isModalVisible"
+  [cardData]="selectedModalCard"
+  (close)="closeModal()"
+  (cardLaunched)="launchCard($event)">
+</app-card-modal>
