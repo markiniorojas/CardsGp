@@ -10,6 +10,12 @@ import { PlayerService } from '../../services/controllerEspecificos/player.servi
   imports: []
 })
 export class PrincipalComponent {
+
+  constructor(private router: Router) {}
+
+  irAPrincipal() {
+    this.router.navigate(['/lobby']);
+  }
   // constructor(
   //   private playerService: PlayerService,
   //   private router: Router

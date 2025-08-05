@@ -2641,23 +2641,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Camilo\\.nuget\\packages\\": {},
+    "C:\\Users\\User\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Camilo\\Desktop\\CardsGp\\backBootCampt\\Data\\Data.csproj",
+      "projectUniqueName": "C:\\Proyect\\CardsGp\\backBootCampt\\Data\\Data.csproj",
       "projectName": "Data",
-      "projectPath": "C:\\Users\\Camilo\\Desktop\\CardsGp\\backBootCampt\\Data\\Data.csproj",
-      "packagesPath": "C:\\Users\\Camilo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Camilo\\Desktop\\CardsGp\\backBootCampt\\Data\\obj\\",
+      "projectPath": "C:\\Proyect\\CardsGp\\backBootCampt\\Data\\Data.csproj",
+      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+      "outputPath": "C:\\Proyect\\CardsGp\\backBootCampt\\Data\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Camilo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -2673,8 +2673,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\Camilo\\Desktop\\CardsGp\\backBootCampt\\Entity\\Entity.csproj": {
-              "projectPath": "C:\\Users\\Camilo\\Desktop\\CardsGp\\backBootCampt\\Entity\\Entity.csproj"
+            "C:\\Proyect\\CardsGp\\backBootCampt\\Entity\\Entity.csproj": {
+              "projectPath": "C:\\Proyect\\CardsGp\\backBootCampt\\Entity\\Entity.csproj"
             }
           }
         }
@@ -2711,12 +2711,26 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[8.0.17, 8.0.17]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[8.0.17, 8.0.17]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[8.0.17, 8.0.17]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.205/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

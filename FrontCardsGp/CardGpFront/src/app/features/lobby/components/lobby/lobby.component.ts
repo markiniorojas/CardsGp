@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { MatIconModule } from '@angular/material/icon';
 import { Player } from '../../../../shared/models/player.model';
 import { PlayerService } from '../../../../services/controllerEspecificos/player.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-lobby',
@@ -14,11 +15,19 @@ import { PlayerService } from '../../../../services/controllerEspecificos/player
 export class LobbyComponent implements OnInit {
   enabledPlayers: Player[] = [];
 
-  constructor(private playerService: PlayerService) {}
+  constructor(private playerService: PlayerService, private router : Router) {}
 
   ngOnInit(): void {
     this.loadEnabledPlayers();
   }
+
+  startGame(): void {
+  if (this.enabledPlayers.length >= 2) {
+    this.router.navigate(['/partida'], {
+      state: { players: this.enabledPlayers }
+    });
+  }
+}
 
   loadEnabledPlayers(): void {
     this.playerService.getEnabledPlayers().subscribe((players) => {

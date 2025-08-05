@@ -10,7 +10,7 @@ namespace Entity.Dto
     public class PlayerCardDto : BaseDto
     {
         public bool isUsed { get; set; }
-        public int userName { get; set; }
+        public string userName { get; set; }
         public string cardName { get; set; }
         public decimal cylinderCapacity { get; set; }
         public decimal hP { get; set; }
