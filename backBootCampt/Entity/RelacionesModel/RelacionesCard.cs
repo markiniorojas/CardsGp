@@ -23,6 +23,10 @@ namespace Entity.RelacionesModel.RelacionesEntities
             builder.Property(c => c.nOclylinder).HasPrecision(10, 2);
             builder.Property(c => c.weight).HasPrecision(10, 2);
             builder.Property(c => c.torque).HasPrecision(10, 2);
+            builder.Property(c => c.conAtributos)
+           .HasMaxLength(250);
+            builder.Property(c => c.sinAtributos)
+            .HasMaxLength(250);
 
             // Relación uno a muchos: Card → PlayerCard
             builder.HasMany(c => c.PlayerCards)
