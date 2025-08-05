@@ -13,17 +13,18 @@ import { PlayerPanel } from '../player-panel/player-panel';
 })
 export class Board {
   players = [
-    { name: 'polit01', avatar: 'assets/CartasSinAtributos/PropertyDefault1.png', cards: 8 },
-    { name: 'motor69', avatar: 'assets/images/motor69.jpg', cards: 8 },
-    { name: 'chingo00', avatar: 'assets/images/chingo00.jpg', cards: 8 },
-    { name: 'terrenietor99', avatar: 'assets/images/terrenietor99.jpg', cards: 8 },
-    { name: 'tralalelo100', avatar: 'assets/images/tralalelo100.jpg', cards: 8 },
-    { name: 'mataton_01', avatar: 'assets/images/mataton_01.jpg', cards: 8 },
+    { name: 'polit01', avatar: 'assets/perfiles/perfil1.png', cards: 8 },
+    { name: 'motor69', avatar: 'assets/perfiles/perfil2.png', cards: 8 },
+    { name: 'chingo00', avatar: 'assets/perfiles/perfil3.png', cards: 8 },
+    { name: 'terrenietor99', avatar: 'assets/perfiles/perfil4.png', cards: 8 },
+    { name: 'tralalelo100', avatar: 'assets/perfiles/perfil5.png', cards: 8 },
+    { name: 'mataton_01', avatar: 'assets/perfiles/perfil6.png', cards: 8 },
   ];
 
   // 🔁 Puedes cambiar 5 por 10, 15, etc. según el mazo que quieras mostrar
   myCards = Array.from({ length: 8 }, (_, i) => ({
-  image: `assets/CartasSinAtributos/PropertyDefault${i + 1}.png`
+  image: `assets/CartasSinAtributos/PropertyDefault${i + 1}.png`,
+  detailedImage: 'assets/cartasAtributo/CardMoto55.png'
     }));
 
 

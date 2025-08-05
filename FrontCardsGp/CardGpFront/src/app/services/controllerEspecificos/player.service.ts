@@ -14,10 +14,10 @@ export class PlayerService {
   }
 
   enablePlayer(id: number) {
-    return this.http.post(`${this.baseUrl}/${id}/enable`, {});
+    return this.http.post(`${this.baseUrl}/${id}/enable`, {}, { responseType: 'text' });
   }
 
   disablePlayer(id: number) {
-    return this.http.post(`${this.baseUrl}/${id}/disable`, {});
+    return this.http.post(`${this.baseUrl}/${id}/disable`, {}, { responseType: 'text' });
   }
 }

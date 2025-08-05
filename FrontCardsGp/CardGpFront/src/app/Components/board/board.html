@@ -10,7 +10,11 @@
   </div>
 
   <div class="center-cards">
-    <div class="empty-slot" *ngFor="let _ of [1,2,3,4]"></div>
+      <div class="detailed-card-container" *ngIf="selectedCardIndex !== null">
+      <img [src]="myCards[selectedCardIndex].detailedImage" alt="Carta Detallada" class="detailed-card-img" />
+    </div>
+    <!-- Slots restantes -->
+    <div class="empty-slot" *ngFor="let _ of [1,2,3]"></div>
   </div>
 
   <div class="players right">
@@ -20,7 +24,7 @@
       [avatar]="p.avatar"
       [cardsCount]="p.cards"
       [isCurrent]="false">
-    </app-player-panel>
+    </app-player-panel> 
   </div>
 </div>
 

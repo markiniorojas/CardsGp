@@ -25,3 +25,18 @@
   border: 2px dashed #aaa;
   border-radius: 10px;
 }
+
+.detailed-card-container {
+  width: 200px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.detailed-card-img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+} 
